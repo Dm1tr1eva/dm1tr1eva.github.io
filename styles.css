@@ -1,0 +1,21 @@
+h1{
+    text-align:center;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    color:rgb(39, 30, 81);
+}
+
+.notes{
+    background-color: rgba(208, 218, 119, 0.526); 
+    border: 2px solid rgb(100, 83, 9) ;
+}
+
+.example{
+    background-color:rgba(60, 79, 64, 0.522);
+    border: 2px solid rgb(15, 39, 21);
+}
