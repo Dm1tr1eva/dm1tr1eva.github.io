@@ -19,3 +19,12 @@ h3{
     background-color:rgba(60, 79, 64, 0.522);
     border: 2px solid rgb(15, 39, 21);
 }
+
+body{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+img{
+    max-width: 100%;
+}
