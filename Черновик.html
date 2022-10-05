@@ -2,18 +2,39 @@
 <!-- <html lang="язык веб-страницы"></html> -->
 <html lang="uk">
 <head>
-<title>balbes</title>
+<title>HTML Introduction</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <!-- <body style="цвет фона страницы или элемента;"></body> -->
 <body style="background-color:rgb(92, 154, 104)">
-    
-<h1>HTML</h1>
+
+
+    <div class="upward" onclick="scrollTopTop()"></div>
+    <section>
+    <div>
+        <h1>HTML</h1>
+    </div>
+
+    <div>
+        <h2>Содержание:</h2>
+    </div>
+
+    <div>
+        <ol>
+            <li><a href="#HTML Basic Examples">Основные примеры HTML</a></li>
+            <ul>
+                <li>HTML-документы</li>
+                <li>Декларация !DOCTYPE</li>
+                <li>HTML-заголовки</li>
+            </ul>
+            <li><a href="#HTML Elements">HTML -элементы</a></li>
+        </ol>
+    </div>
 
 <!-- Основные примеры HTML -->
 <div>
     <div> 
-        <h2>Основные примеры HTML</h2>
+        <h2 id="HTML Basic Examples">Основные примеры HTML</h2>
     </div>
     <!-- HTML-документы -->
     <div>
@@ -72,10 +93,13 @@
 <!-- HTML -элементы -->
 <div>
     <div>
-        <h2>HTML -элементы</h2>
+        <h2 id="HTML Elements">HTML -элементы</h2>
         <p>Элемент HTML определяется начальным тегом, некоторым содержимым и конечным тегом.</p>
         <p class="example"> &lt;тэг&gt; Содержимое идет здесь... &lt;/тэг&gt;</p>
-        <p class="notes"><b>Примечание.</b> Некоторые элементы HTML не имеют содержимого (например, элемент <b>&lt;br&gt;</b> ). Эти элементы называются пустыми элементами. Пустые элементы не имеют закрывающего тега!</p>
+        <p class="notes"><b>Примечание.</b> Некоторые элементы HTML 
+            не имеют содержимого (например, элемент <b>&lt;br&gt;</b> ). 
+            Эти элементы называются пустыми элементами. 
+            Пустые элементы не имеют закрывающего тега!</p>
     </div>
     <!-- Вложенные элементы HTML -->
     <div>
@@ -116,7 +140,7 @@
 <!-- HTML -атрибуты -->
 <div>
     <div>
-    <h2>HTML -атрибуты</h2>
+    <h2 id="HTML Attributes">HTML -атрибуты</h2>
     <p>Атрибуты HTML предоставляют дополнительную информацию об элементах HTML.</p>
     </div>
     <!-- Атрибут href -->
@@ -185,7 +209,7 @@
 <!-- HTML -заголовки -->
 <div>
     <div>
-        <h2>HTML -заголовки</h2>
+        <h2 id="HTML Headings">HTML -заголовки</h2>
         <p>Заголовки HTML — это заголовки или подзаголовки, которые вы хотите отобразить на веб-странице.</p>
     </div>
     <!-- Заголовки важны -->
@@ -207,7 +231,7 @@
 <!-- HTML -абзацы -->
 <div>
     <div>
-        <h2>HTML -абзацы</h2>
+        <h2 id="HTML Paragraphs">HTML -абзацы</h2>
         <p>Элемент HTML <b>&lt;p&gt;</b> определяет абзац.</p>
         <p>Абзац всегда начинается с новой строки, и браузеры автоматически добавляют пробел (поле) до и после абзаца.</p>
     </div>
@@ -279,7 +303,7 @@
 <!-- HTML -стили -->
 <div>
     <div>
-        <h2>HTML -стили</h2>
+        <h2 id="HTML Styles">HTML -стили</h2>
         <p>Атрибут HTML <b>style</b> используется для добавления к элементу стилей, таких как цвет, шрифт, размер и т. д.</p>
         <div class="example">
             <p style="color:red;">я красный</p>
@@ -347,7 +371,7 @@
 <!-- Форматирование HTML -текста -->
 <div>
     <div>
-        <h2>Форматирование HTML -текста</h2>
+        <h2 id="HTML Text Formatting">Форматирование HTML -текста</h2>
         <p>HTML содержит несколько элементов для определения текста со специальным значением.</p>
         <div class="example">
             <p><b>Этот текст выделен жирным шрифтом</b></p>
@@ -432,7 +456,7 @@
 <!-- HTML -цитаты и элементы цитирования -->
 <div>
     <div>
-        <h2>HTML -цитаты и элементы цитирования</h2>
+        <h2 id="HTML Quotation and Citation Elements">HTML -цитаты и элементы цитирования</h2>
         <p>В этой главе мы рассмотрим элементы <b>&lt;blockquote&gt;</b>, <b>&lt;q&gt;</b>, <b>&lt;abbr&gt;</b>, <b>&lt;address&gt;</b>, <b>&lt;cite&gt;</b> и <b>&lt;bdo&gt;</b> HTML.</p>
         <div class="example">
             <p>Вот цитата с сайта WWF:</p>
@@ -500,74 +524,88 @@
     </div>
 </div>
 
+<!-- Цвета HTML -->
+<div>
+    <div>
+        <h2 id="HTML Colors">Цвета HTML</h2>
+        <p>Цвета HTML задаются предопределенными именами 
+            цветов или значениями RGB, HEX, HSL, RGBA или HSLA.</p>
+    </div>
+    <!--Названия цветов  -->
+    <div>
+        <h3>Названия цветов</h3>
+        <p>В HTML цвет можно указать с помощью имени цвета:</p>
+        <div style="border:2px solid  rgb(15, 39, 21);">
+            <h4 style="background-color:tomato ;">Tomato</h4>
+            <h4 style="background-color:orange ;">Orange</h4>
+            <h4 style="background-color:dodgerblue ;">DodgerBlue</h4>
+            <h4 style="background-color:mediumseagreen ;">MediumSeaGreen</h4>
+            <h4 style="background-color:grey ;">Grey</h4>
+            <h4 style="background-color:slateblue ;">SlateBlue</h4>
+            <h4 style="background-color:violet ;">Violet</h4>
+            <h4 style="background-color:lightgray ;">LightGrey</h4>
+        </div>
+    </div>
+    <!-- Фоновый цвет -->
+    <div>
+        <h3>Фоновый цвет</h3>
+        <p>Вы можете установить цвет фона для элементов HTML:</p>
+        <div class="example">
+            <h4 style="background-color:DodgerBlue; text-align: center;">Hello World</h4>
+            <p style="background-color:Tomato;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quaerat nesciunt aliquam non, neque cumque nobis ex inventore corporis fuga aliquid placeat suscipit dolores ratione quidem facilis adipisci odit rerum!</p>
+        </div>
+    </div>
+    <!-- Цвет текста -->
+    <div>
+        <h3>Цвет текста</h3>
+        <p>Вы можете установить цвет текста:</p>
+        <div class="example">
+            <h4 style="color:Tomato;">Hello World</h4>
+            <p style="color:DodgerBlue;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quas aspernatur, et earum temporibus in! Vel quisquam, quis necessitatibus commodi delectus velit doloribus tenetur ullam perferendis earum. Vel, maiores perspiciatis?</p>
+            <p style="color:MediumSeaGreen;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae doloribus temporibus quaerat id distinctio tempore consequatur quo dolorum est. At dolorem explicabo reprehenderit. Ducimus deleniti, voluptatibus corrupti obcaecati voluptate libero?</p>
+        </div>
+    </div>
+    <!-- Цвет границы -->
+    <div>
+        <h3>Цвет границы</h3>
+        <p>Вы можете установить цвет границ:</p>
+        <div class="example">
+            <h4 style="border:2px solid Tomato;">Hello World</h4>
+            <h4 style="border:2px solid DodgerBlue;">Hello World</h4>
+            <h4 style="border:2px solid Violet;">Hello World</h4>
+        </div>
+    </div>
+    <!-- Цветовые значения -->
+    <div>
+        <h3>Цветовые значения</h3>
+        <p>В HTML цвета также могут быть указаны с использованием значений RGB, значений HEX, значений HSL, значений RGBA и значений HSLA.</p>
+        <p>Для следующих трех элементов <b>&lt;div&gt;</b> цвет фона установлен со значениями RGB, HEX и HSL:</p>
+        <div class="example">
+            <p>То же, что и название цвета "Помидор":</p>
+            <h4 style="background-color:rgb(255, 99, 71);">RGB(255, 99, 71)</h4>
+            <h4 style="background-color:#ff6347;">#ff6347</h4>
+            <h4 style="background-color:hsl(9, 100%, 64%);">hsl(9, 100%, 64%)</h4>
+            <p>То же, что и название цвета «Помидор», но прозрачность 50%:</p>
+            <h4 style="background-color:rgba(255, 99, 71, 0.5);">RGBA(255, 99, 71, 0,5)</h4>
+            <h4 style="background-color:hsla(9, 100%, 64%, 0.5);">hsla(9, 100%, 64%, 0,5)</h4>
+        </div>
+    </div>
+</div>
 
+</section>
+<script>
+    window.addEventListener('scroll', function(){
+        let scroll = document.querySelector('.upward');
+        scroll.classList.toggle('active', window.scrollY>500);
+    })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h1 style="text-align:center ;">Цвета HTML</h1>
-<h2>Названия цветов</h2>
-<p>В HTML цвет можно указать с помощью имени цвета:</p>
-<p style="background-color:tomato ;">Tomato</p>
-<p style="background-color:orange ;">Orange</p>
-<p style="background-color:dodgerblue ;">DodgerBlue</p>
-<p style="background-color:mediumseagreen ;">MediumSeaGreen</p>
-<p style="background-color:grey ;">Grey</p>
-<p style="background-color:slateblue ;">SlateBlue</p>
-<p style="background-color:violet ;">Violet</p>
-<p style="background-color:lightgray ;">LightGrey</p>
-
-<h3>Фоновый цвет</h3>
-<p>Вы можете установить цвет фона для элементов HTML:</p>
-<p style="background-color:dodgerblue ; text-align: center;">Hello World</p>
-<p style="background-color:tomato ;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-
-<h2>Цвет текста</h2>
-<p>Вы можете установить цвет текста:</p>
-<p style="color:tomato ;">Hello World</p>
-<p style="color:dodgerblue ;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-<p style="color:mediumseagreen ;">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-
-<h2>Цвет границы</h2>
-<p>Вы можете установить цвет границ:</p>
-<p style="border: 2px solid tomato ;">Hello World</p>
-<p style="border: 4px solid dodgerblue;">Hello World</p>
-<p style="border: 6px solid violet;">Hello World</p>
-
-<h2>Цветовые значения</h2>
-<p>В HTML цвета также могут быть указаны с использованием значений RGB, значений HEX, значений HSL, значений RGBA и значений HSLA.</p>
-<p>То же, что и название цвета "Помидор":</p>
-<p style="background-color:rgb(255, 99, 71) ;">rgb(255, 99, 71)</p>
-<p style="background-color:#ff6347;">#ff6347</p>
-<p style="background-color:hsl(9, 100%, 64%) ;">hsl(9, 100%, 64%)</p>
-<p>То же, что и название цвета «Помидор», но прозрачность 50%:</p>
-<p style="background-color:rgba(255, 99, 71, 0.5) ;">rgba(255, 99, 71, 0.5)</p>
-<p style="background-color:hsla(9, 100%, 64%, 0.5) ;">hsla(9, 100%, 64%, 0.5)</p>
-<p>В дополнение к предопределенным именам цветов цвета могут быть указаны с использованием RGB, HEX, HSL или даже прозрачных цветов с использованием значений цвета RGBA или HSLA.</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    function scrollTopTop(){
+        window.scrollTo({
+            top:0, 
+            behavior: 'smooth'
+        })
+    }
+</script>
 
 </body>
 </html>
