@@ -22,13 +22,24 @@
     <div>
         <ol>
             <li><a href="#HTML Basic Examples">Основные примеры HTML</a></li>
-            <ul>
-                <li>HTML-документы</li>
-                <li>Декларация !DOCTYPE</li>
-                <li>HTML-заголовки</li>
-            </ul>
+                <ul>
+                    <li>HTML-документы</li>
+                    <li>Декларация !DOCTYPE</li>
+                    <li>HTML-заголовки</li>
+                </ul>
             <li><a href="#HTML Elements">HTML -элементы</a></li>
+            <li><a href="#HTML Attributes">HTML -атрибуты</a></li>
+            <li><a href="#HTML Headings">HTML -заголовки</a></li>
+            <li><a href="#HTML Paragraphs">HTML -абзацы</a></li>
+            <li><a href="#HTML Styles">HTML -стили</a></li>
+            <li><a href="#HTML Text Formatting">Форматирование HTML -текста</a></li>
+            <li><a href="#HTML Quotation and Citation Elements">HTML -цитаты и элементы цитирования</a></li>
+            <li><a href="#HTML Colors">Цвета HTML</a></li>
+                <ul>
+                    <li><a href="#HTML RGB and RGBA Colors">Цвета HTML RGB и RGBA</a></li>
+                </ul>
         </ol>
+       
     </div>
 
 <!-- Основные примеры HTML -->
@@ -591,6 +602,82 @@
         </div>
     </div>
 </div>
+
+<!-- Цвета HTML RGB и RGBA -->
+<div>
+    <div>
+        <h2 id="HTML RGB and RGBA Colors">Цвета HTML RGB и RGBA</h2>
+        <p>Значение цвета RGB представляет КРАСНЫЙ, ЗЕЛЕНЫЙ и СИНИЙ источники света.</p>
+        <p>Цветовое значение RGBA является расширением RGB с альфа-каналом (непрозрачностью).</p>
+    </div>
+    <!-- Цветовые значения RGB -->
+    <div>
+        <h3>Цветовые значения RGB</h3>
+        <p>В HTML цвет можно указать как значение RGB, используя следующую формулу:</p>
+        <b>RGB ( красный, зеленый, синий )</b>
+        <p>Каждый параметр (красный, зеленый и синий) определяет интенсивность цвета со значением от 0 до 255.</p>
+        <p>Это означает, что существует 256 х 256 х 256 = 16777216 возможных цветов!</p>
+        <p>Например, rgb(255, 0, 0) отображается красным цветом, потому что для красного установлено максимальное значение (255), а для двух других (зеленый и синий) установлено значение 0.</p>
+        <p>Другой пример: rgb(0, 255, 0) отображается зеленым цветом, потому что для зеленого установлено максимальное значение (255), а для двух других (красный и синий) установлено значение 0.</p>
+        <p>Чтобы отобразить черный цвет, установите для всех параметров цвета значение 0, например: rgb(0, 0, 0).</p>
+        <p>Чтобы отобразить белый цвет, установите для всех параметров цвета значение 255, например: rgb(255, 255, 255).</p>
+        <div class="example">
+            <h4 style="background-color: RGB(255, 0, 0);">RGB(255, 0, 0)</h4>        
+            <h4 style="background-color: RGB(0, 0, 255);">RGB(0, 0, 255)</h4>
+            <h4 style="background-color: RGB(0, 225, 0);">RGB(0, 225, 0)</h4>
+            <h4 style="background-color: RGB(0, 0, 0); color: white;">RGB(0, 0, 0)</h4>
+            <h4 style="background-color: RGB(225, 225, 255);">RGB(225, 225, 255)</h4>
+            <h4 style="background-color: RGB(60, 179, 113);">RGB(60, 179, 113)</h4>
+            <h4 style="background-color: RGB(238, 130, 238);">RGB(238, 130, 238)</h4>
+            <h4 style="background-color: RGB(255, 165, 0);">RGB(255, 165, 0)</h4>
+            <h4 style="background-color: RGB(106, 90, 205);">RGB(106, 90, 205)</h4>
+        </div>
+     </div>
+     <!-- Оттенки серого -->
+     <div>
+        <h3>Оттенки серого</h3>
+        <p>Оттенки серого часто определяются равными значениями всех трех параметров:</p>
+        <div class="example">
+            <h4 style="background-color: RGB(60, 60, 60);">RGB(60, 60, 60)</h4>
+            <h4 style="background-color: RGB(100, 100, 100);">RGB(100, 100, 100)</h4>
+            <h4 style="background-color: RGB(140, 140, 140);">RGB(140, 140, 140)</h4>
+            <h4 style="background-color: RGB(180, 180, 180);">RGB(180, 180, 180)</h4>
+            <h4 style="background-color: RGB(200, 200, 200);">RGB(200, 200, 200)</h4>
+            <h4 style="background-color: RGB(240, 240, 240);">RGB(240, 240, 240)</h4>
+        </div>
+     </div>
+     <!-- Цветовые значения RGBA -->
+     <div>
+        <h3>Цветовые значения RGBA</h3>
+        <p>Цветовые значения RGBA являются расширением цветовых значений RGB с альфа-каналом, который определяет непрозрачность цвета.</p>
+        <p></p>
+        <p>Значение цвета RGBA указывается с помощью:</p>
+        <b>rgba ( красный, зеленый , синий, альфа )</b>
+        <p>Альфа-параметр — это число от 0,0 (полностью прозрачный) до 1,0 (совсем непрозрачный):</p>
+        <div class="example">
+            <h4 style="background-color: RGBA(255, 99, 71, 0);">RGBA(255, 99, 71, 0)</h4>
+            <h4 style="background-color: RGBA(255, 99, 71, 0.2);">RGBA(255, 99, 71, 0,2)</h4>
+            <h4 style="background-color: RGBA(255, 99, 71, 0.4);">RGBA(255, 99, 71, 0,4)</h4>
+            <h4 style="background-color: RGBA(255, 99, 71, 0.6);">RGBA(255, 99, 71, 0,6)</h4>
+            <h4 style="background-color:rgba(255, 99, 71, 0.8);">RGBA(255, 99, 71, 0,8)</h4>
+            <h4 style="background-color: RGBA(255, 99, 71, 1);">RGBA(255, 99, 71, 1)</h4>
+        </div>
+     </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </section>
 <script>
