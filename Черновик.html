@@ -22,11 +22,6 @@
     <div>
         <ol>
             <li><a href="#HTML Basic Examples">Основные примеры HTML</a></li>
-                <ul>
-                    <li>HTML-документы</li>
-                    <li>Декларация !DOCTYPE</li>
-                    <li>HTML-заголовки</li>
-                </ul>
             <li><a href="#HTML Elements">HTML -элементы</a></li>
             <li><a href="#HTML Attributes">HTML -атрибуты</a></li>
             <li><a href="#HTML Headings">HTML -заголовки</a></li>
@@ -37,6 +32,8 @@
             <li><a href="#HTML Colors">Цвета HTML</a></li>
                 <ul>
                     <li><a href="#HTML RGB and RGBA Colors">Цвета HTML RGB и RGBA</a></li>
+                    <li><a href="#HTML HEX Colors">Цвета HTML HEX</a></li>
+                    <li><a href="#HTML HSL and HSLA Colors">Цвета HTML HSL и HSLA</a></li>
                 </ul>
         </ol>
        
@@ -665,8 +662,135 @@
      </div>
 </div>
 
+<!-- Цвета HTML HEX -->
+<div>
+    <div>
+        <h2 id="HTML HEX Colors">Цвета HTML HEX</h2>
+        <p>Шестнадцатеричный цвет указывается с помощью: #RRGGBB, где RR (красный), GG (зеленый) и BB (синий) шестнадцатеричные целые числа определяют компоненты цвета.</p>
+    </div>
+    <!-- Шестнадцатеричные значения цвета -->
+    <div>
+        <h3>Шестнадцатеричные значения цвета</h3>
+        <p>В HTML цвет можно указать с помощью шестнадцатеричного значения в форме:</p>
+        <b>#RRGGBB</b>
+        <p>Где rr (красный), gg (зеленый) и bb (синий) — шестнадцатеричные значения от 00 до ff (такие же, как десятичные числа 0–255).</p>
+        <p>Например, #ff0000 отображается красным цветом, потому что для красного установлено максимальное значение (ff), а для двух других (зеленый и синий) установлено значение 00.</p>
+        <p>Другой пример: #00ff00 отображается зеленым цветом, потому что для зеленого установлено максимальное значение (ff), а для двух других (красный и синий) установлено значение 00.</p>
+        <p>Чтобы отобразить черный цвет, установите для всех параметров цвета значение 00, например: #000000.</p>
+        <p>Чтобы отобразить белый цвет, установите для всех параметров цвета значение ff, например: #ffffff.</p>
+        <div class="example">
+            <h4 style="background-color: #ff0000;">#ff0000</h4>
+            <h4 style="background-color: #0000ff;">#0000ff</h4>   
+            <h4 style="background-color: #00ff00;">#00ff00</h4>
+            <h4 style="background-color: #000000; color: #ffffff;">#000000</h4>
+            <h4 style="background-color: #ffffff;">#ffffff</h4>
+            <h4 style="background-color: #3cb371;">#3cb371</h4>
+            <h4 style="background-color: #ee82ee;">#ee82ee</h4>
+            <h4 style="background-color: #ffa500;">#ffa500</h4>
+            <h4 style="background-color: #6a5acd;">#6a5acd</h4>
+        </div>
+    </div>
+    <!-- Оттенки серого -->
+    <div>
+        <h3>Оттенки серого</h3>
+        <p>Оттенки серого часто определяются равными значениями всех трех параметров:</p>
+        <div class="example">
+            <h4 style="background-color: #404040;">#404040</h4>
+            <h4 style="background-color: #686868;">#686868</h4>   
+            <h4 style="background-color: #a0a0a0;">#a0a0a0</h4>
+            <h4 style="background-color: #bebebe;">#bebebe</h4>
+            <h4 style="background-color: #dcdcdc;">#dcdcdc</h4>
+            <h4 style="background-color: #f8f8f8;">#f8f8f8</h4>
+        </div>
+    </div>
+</div>
 
-
+<!-- Цвета HTML HSL и HSLA -->
+<div>
+    <div>
+        <h2 id="HTML HSL and HSLA Colors">Цвета HTML HSL и HSLA</h2>
+        <p>HSL означает оттенок, насыщенность и легкость.</p>
+        <p>Цветовые значения HSLA являются расширением HSL с альфа-каналом (непрозрачность).</p>
+    </div>
+    <!-- Цветовые значения HSL -->
+    <div>
+        <h3>Цветовые значения HSL</h3>
+        <p>В HTML цвет можно указать с помощью оттенка, насыщенности и яркости (HSL) в форме:</p>
+        <b>hsl (hue, saturation, lightness)(оттенок, насыщенность, яркость)</b>
+        <p>Оттенок — это степень на цветовом круге от 0 до 360. 0 — красный, 120 — зеленый, 240 — синий.</p>
+        <p>Насыщенность — это процентное значение. 0% означает оттенок серого, а 100% — полный цвет.</p>
+        <p>Легкость также является процентным значением. 0% — черный, 100% — белый.</p>
+        <div class="example">
+            <h4 style="background-color: hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h4>
+            <h4 style="background-color: hsl(240, 100%, 50%);">hsl(240, 100%, 50%)</h4> 
+            <h4 style="background-color: hsl(120, 100%, 50%);">hsl(120, 100%, 50%)</h4>
+            <h4 style="background-color: hsl(0, 0%, 0%); color: hsl(0, 100%, 100%);">hsl(0, 0%, 0%)</h4>
+            <h4 style="background-color: hsl(0, 100%, 100%);">hsl(0, 100%, 100%)</h4>
+            <h4 style="background-color: hsl(147, 50%, 47%);">hsl(147, 50%, 47%)</h4>
+            <h4 style="background-color: hsl(300, 76%, 72%);">hsl(300, 76%, 72%)</h4>
+            <h4 style="background-color: hsl(39, 100%, 50%);">hsl(39, 100%, 50%)</h4>
+            <h4 style="background-color: hsl(248, 53%, 58%);">hsl(248, 53%, 58%)</h4>
+        </div>
+    </div>
+    <!-- Насыщенность -->
+    <div>
+        <h3>Насыщенность</h3>
+        <p>Насыщенность можно описать как интенсивность цвета.</p>
+        <p>100% чистый цвет, без оттенков серого.</p>
+        <p>50% — это 50% серого, но вы все равно можете видеть цвет.</p>
+        <p>0% полностью серый; вы больше не можете видеть цвет.</p>
+        <div class="example">
+            <h4 style="background-color: hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h4>
+            <h4 style="background-color: hsl(0, 80%, 50%);">hsl(0, 80%, 50%)</h4>
+            <h4 style="background-color: hsl(0, 60%, 50%);">hsl(0, 60%, 50%)</h4>
+            <h4 style="background-color: hsl(0, 40%, 50%);">hsl(0, 40%, 50%)</h4>
+            <h4 style="background-color: hsl(0, 20%, 50%);">hsl(0, 20%, 50%)</h4>
+            <h4 style="background-color: hsl(0, 0%, 50%);">hsl(0, 0%, 50%)</h4>
+        </div>
+    </div>
+    <!-- Легкость -->
+    <div>
+        <h3>Легкость</h3>
+        <p>Яркость цвета можно описать как количество света, которое вы хотите придать цвету, где 0% означает отсутствие света (черный), 50% означает 50% света (ни темный, ни светлый), а 100% означает полную яркость (белый). ).</p>
+        <div class="example">
+            <h4 style="background-color: hsl(0, 100%, 0%); color: hsl(0, 100%, 100%);">hsl(0, 100%, 0%)</h4>
+            <h4 style="background-color: hsl(0, 100%, 25%);">hsl(0, 100%, 25%)</h4>
+            <h4 style="background-color: hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h4>
+            <h4 style="background-color: hsl(0, 100%, 75%);">hsl(0, 100%, 75%)</h4>
+            <h4 style="background-color: hsl(0, 100%, 90%);">hsl(0, 100%, 90%)</h4>
+            <h4 style="background-color: hsl(0, 100%, 100%);">hsl(0, 100%, 100%)</h4>
+        </div>
+    </div>
+    <!-- Оттенки серого -->
+    <div>
+        <h3>Оттенки серого</h3>
+        <p>Оттенки серого часто определяются путем установки оттенка и насыщенности на 0 и регулировки яркости от 0% до 100%, чтобы получить более темные/светлые оттенки:</p>
+        <div class="example">
+            <h4 style="background-color: hsl(0, 0%, 20%);">hsl(0, 0%, 20%)</h4>
+            <h4 style="background-color: hsl(0, 0%, 30%);">hsl(0, 0%, 30%)</h4>
+            <h4 style="background-color: hsl(0, 0%, 40%);">hsl(0, 0%, 40%)</h4>
+            <h4 style="background-color: hsl(0, 0%, 60%);">hsl(0, 0%, 60%)</h4>
+            <h4 style="background-color: hsl(0, 0%, 70%);">hsl(0, 0%, 70%)</h4>
+            <h4 style="background-color: hsl(0, 0%, 90%);">hsl(0, 0%, 90%)</h4>
+        </div>
+    </div>
+    <!-- Цветовые значения HSLA -->
+    <div>
+        <h3>Цветовые значения HSLA</h3>
+        <p>Значения цвета HSLA являются расширением значений цвета HSL с альфа-каналом, который определяет непрозрачность цвета.</p>
+        <p>Значение цвета HSLA указывается с помощью:</p>
+        <b>hsla (оттенок, насыщенность, яркость, альфа)</b>
+        <p>Альфа-параметр — это число от 0,0 (полностью прозрачный) до 1,0 (совсем непрозрачный):</p>
+        <div class="example">
+            <h4 style="background-color: hsla(9, 100%, 64%, 0);">hsla(9, 100%, 64%, 0)</h4>
+            <h4 style="background-color: hsla(9, 100%, 64%, 0.2);">hsla(9, 100%, 64%, 0.2)</h4>
+            <h4 style="background-color: hsla(9, 100%, 64%, 0.4);">hsla(9, 100%, 64%, 0.4)</h4>
+            <h4 style="background-color: hsla(9, 100%, 64%, 0.6);">hsla(9, 100%, 64%, 0.6)</h4>
+            <h4 style="background-color: hsla(9, 100%, 64%, 0.8);">hsla(9, 100%, 64%, 0.8)</h4>
+            <h4 style="background-color: hsla(9, 100%, 64%, 1);">hsla(9, 100%, 64%, 1)</h4>
+        </div>
+    </div>
+</div>
 
 
 
