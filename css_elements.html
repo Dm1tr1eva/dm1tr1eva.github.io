@@ -62,8 +62,8 @@
                 <p>&lt;head&gt;</p>
                 <p>&lt;style&gt;</p>
                 <p>body {background-color: powderblue;}</p>
-                <p>h1 {color: blue;}</p>
-                <p>p {color: red;}</p>
+                <p>h1   {color: blue;}</p>
+                <p>p    {color: red;}</p>
                 <p>&lt;/style&gt;</p>
                 <p>&lt;/head&gt;</p>
                 <p>&lt;body&gt;</p><br>
@@ -84,7 +84,7 @@
                 <p>&lt;!DOCTYPE html&gt;</p>
                 <p>&lt;html&gt;</p>
                 <p>&lt;head&gt;</p>
-                    <p>&lt;link rel="stylesheet" href="styles.css"&gt;</p>
+                    <p class="margin">&lt;link rel="stylesheet" href="styles.css"&gt;</p>
                 <p>&lt;/head&gt;</p>
                 <p>&lt;body&gt;</p><br>
 
@@ -98,16 +98,104 @@
             <p>Вот как выглядит файл «styles.css»:</p>
             <div class="example">
                 <p>body {</p> 
-                <p>background-color: powderblue;</p>
+                    <p class="margin">background-color: powderblue;</p>
                 <p>}</p>
                 <p>h1 {</p>
-                <p>color: blue;</p>
+                    <p class="margin">color: blue;</p>
                 <p>}</p>
                 <p>p {</p>
-                <p>color: red;</p>
+                    <p class="margin">color: red;</p>
                 <p>}</p>
             </div>
             <p class="notes"><b>Совет:</b> С помощью внешней таблицы стилей вы можете изменить внешний вид всего веб-сайта, изменив один файл!</p>
+        </div>
+        <!-- Цвета, шрифты и размеры CSS -->
+        <div>
+            <h3>Цвета, шрифты и размеры CSS</h3>
+            <p>Здесь мы продемонстрируем некоторые часто используемые свойства CSS. Вы узнаете о них больше позже.</p>
+            <p>Свойство CSS <b>color</b> определяет используемый цвет текста.</p>
+            <p>Свойство CSS <b>font-family</b> определяет используемый шрифт.</p>
+            <p>Свойство CSS <b>font-size</b> определяет используемый размер текста.</p>
+            <div class="example">
+                <p>&lt;!DOCTYPE html&gt;</p>
+                <p>&lt;html&gt;</p>
+                <p>&lt;head&gt;</p>
+                <p>&lt;style&gt;</p>
+
+                <p>h1 {</p>
+                    <p class="margin">color: blue;</p>
+                    <p class="margin">font-family: verdana;</p>
+                    <p class="margin">font-size: 300%;</p>
+                <p>}</p>
+                <p>p {</p>
+                    <p class="margin" class="margin">color: red;</p>
+                    <p class="margin" class="margin">font-family: courier;</p>
+                    <p class="margin" class="margin">font-size: 160%;</p>
+                <p>}</p>
+                
+                <p>&lt;/style&gt;</p>
+                <p>&lt;/head&gt;</p>
+                <p>&lt;body&gt;</p><br>
+
+                <p>&lt;h4&gt;Это заголовок&lt;/h4&gt;</p>
+                <p>&lt;p&gt;Это абзац.&lt;/p&gt;</p><br>
+
+                <p>&lt;/body&gt;</p>
+                <p>&lt;/html&gt;</p>
+            </div>
+        </div>
+        <!-- Рамка CSS -->
+        <div>
+            <h3>Рамка CSS</h3>
+            <p>Свойство CSS <b>border</b> определяет рамку вокруг элемента HTML.</p>
+            <p class="notes"><b>Совет:</b> Вы можете определить рамку практически для всех элементов HTML.</p>
+            <div class="example">
+                <p>Использование свойства рамки CSS: </p>
+                <p>p {</p>
+                    <p class="margin">border: 2px solid powderblue;</p>
+                <p>}</p>
+            </div>
+        </div>
+        <!-- CSS-отступ -->
+        <div>
+            <h3>CSS-отступ</h3>
+            <p>Свойство CSS <b>padding</b> определяет отступ (пробел) между текстом и рамкой.</p>
+            <div class="example">
+                <p>Использование свойств CSS <b>border</b> и <b>padding</b>:</p>
+                <p>p {</p>
+                    <p class="margin">border: 2px solid powderblue;</p>
+                    <p class="margin">padding: 30px;</p>
+                <p>}</p>
+            </div>
+        </div>
+        <!-- CSS-поле -->
+        <div>
+            <h3>CSS-поле</h3>
+            <p>Свойство CSS <b>margin</b> определяет поле (пробел) за границей.</p>
+            <div class="example">
+                <p>Использование свойств CSS border и margin:</p>
+                <p>p {</p>
+                    <p class="margin">border: 2px solid powderblue;</p>
+                    <p class="margin">margin: 50px;</p>
+                <p>}</p>
+            </div>
+        </div>
+        <!-- Ссылка на внешний CSS -->
+        <div>
+            <h3>Ссылка на внешний CSS</h3>
+            <p>На внешние таблицы стилей можно ссылаться по полному URL-адресу или по пути относительно текущей веб-страницы.</p>
+            <div class="example">
+                <p>В этом примере используется полный URL-адрес для ссылки на таблицу стилей:</p>
+                <p>&lt;link rel="stylesheet" href="https://www.w3schools.com/html/styles.css"&gt;</p>
+            </div>
+            <div class="example">
+                <p>Этот пример ссылается на таблицу стилей, расположенную в папке html на текущем веб-сайте:</p>
+                <p>&lt;link rel="stylesheet" href="/html/styles.css"&gt;</p>
+            </div>
+            <div class="example">
+                <p>Этот пример ссылается на таблицу стилей, расположенную в той же папке, что и текущая страница:</p>
+                <p>&lt;link rel="stylesheet" href="styles.css"&gt;</p>
+            </div>
         </div>
     </div>
 
