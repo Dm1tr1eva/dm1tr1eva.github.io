@@ -3,21 +3,35 @@
 <html lang="uk">
 <head>
 
-<title>HTML Introduction</title>
+<title>CSS</title>
 <link rel="stylesheet" href="styles.css">
 
 </head>
 <!-- <body style="цвет фона страницы или элемента;"></body> -->
 <body style="background-color:rgb(92, 154, 104)">
 
+    <div class="upward" onclick="scrollTopTop()"></div>
+    <section>
     <div>
         <h1>CSS</h1>
     </div>
 
+    <div>
+        <h2>Содержание:</h2>
+    </div>
+
+    <div>
+        <ol>
+            <li><a href="#HTML Styles - CSS">Стили HTML — CSS</a></li>
+            <li><a href="#HTML Links">HTML -ссылки</a></li>
+        </ol>
+    </div>
+
+
     <!-- Стили HTML — CSS -->
     <div>
         <div>
-            <h2>Стили HTML — CSS</h2>
+            <h2 id="HTML Styles - CSS">Стили HTML — CSS</h2>
             <p>CSS означает каскадные таблицы стилей.</p>
             <p>CSS экономит много работы. Он может управлять макетом нескольких веб-страниц одновременно.</p>
         </div>
@@ -202,7 +216,7 @@
     <!-- HTML -ссылки -->
     <div>
         <div>
-            <h2>HTML -ссылки</h2>
+            <h2 id="HTML Links">HTML -ссылки</h2>
             <p>Ссылки есть почти на всех веб-страницах. Ссылки позволяют пользователям переходить со страницы на страницу.</p>
         </div>
         <!-- HTML-ссылки — гиперссылки -->
@@ -261,21 +275,79 @@
                 <p><a href="https://www.google.com/">Google</a></p>
 
                 <h4>относительный URL-адрес</h4>
-                <p><a href="html_images.asp">HTML Images</a></p>
-                <p><a href="/css/default.asp">CSS Tutorial</a></p>
+                <p><a href="./Черновик.html">HTML </a></p>
+                <p><a href="./css_elements.html">CSS </a></p>
             </div>
         </div>
         <!-- HTML-ссылки — использование изображения в качестве ссылки -->
         <div>
             <h3>HTML-ссылки — использование изображения в качестве ссылки</h3>
             <p>Чтобы использовать изображение в качестве ссылки, просто поместите <b>&lt;img&gt;</b> тег внутри <b>&lt;a&gt;</b> тега:</p>
-            <div></div>
+            <div class="example">
+                <a href="https://www.w3schools.com/html/html_links.asp">
+                    <img src="img/Chat-Emoticon-PNG-Picture.png" alt="HTML tutorial" style="width:42px;height:42px;">
+                </a>
+            </div>
+        </div>
+        <!-- Ссылка на адрес электронной почты -->
+        <div>
+            <h3>Ссылка на адрес электронной почты</h3>
+            <p>Используйте <b>mailto:</b> внутри <b>href</b> атрибута, чтобы создать ссылку, которая открывает программу электронной почты пользователя (чтобы позволить им отправить новое электронное письмо):</p>
+            <div class="example">
+                <a href="mailto:dmitrievadasa15@gmail.com">Отправить письмо</a>
+            </div>
+        </div>
+        <!-- Кнопка как ссылка -->
+        <div>
+            <h3>Кнопка как ссылка</h3>
+            <p>Чтобы использовать HTML-кнопку в качестве ссылки, необходимо добавить код JavaScript.</p>
+            <p>JavaScript позволяет указать, что происходит при определенных событиях, например при нажатии кнопки:</p>
+            <div class="example">
+                <button onclick="document.location='default.asp'">Учебник по HTML</button>
+            </div>
+        </div>
+        <!-- Заголовки ссылок -->
+        <div>
+            <h3>Заголовки ссылок</h3>
+            <p>Атрибут <b>title</b> указывает дополнительную информацию об элементе. Информация чаще всего отображается в виде всплывающей подсказки при наведении мыши на элемент.</p>
+            <div class="example">
+                <a href="./Черновик.html" title="Основные примеры HTML">Конспект по HTML</a>
+            </div>
+        </div>
+        <!-- Подробнее об абсолютных и относительных URL-адресах -->
+        <div>
+            <h3>Подробнее об абсолютных и относительных URL-адресах</h3>
+            <div class="example">
+                <p>Используйте полный URL-адрес для ссылки на веб-страницу: </p>
+                <a href="https://www.w3schools.com/html/default.asp">Учебник по HTML</a>
+                
+                <p>Ссылка на страницу, расположенную в другой папке относительно данного документа (<b>img/</b> указывает на папку в которой находится открываемый документ). </p>
+                <img src="img/Chat-Emoticon-PNG-Picture.png" alt="смайлик" style="width:42px;height:42px;">
+                
+                <p>Ссылка на страницу, расположенную в той же папке, что и данный документ: </p>
+                <a href="./Черновик.html">Конспект по HTML</a>
+             </div>
         </div>
     </div>
 
 
 
 
+
+</section>
+<script>
+    window.addEventListener('scroll', function(){
+        let scroll = document.querySelector('.upward');
+        scroll.classList.toggle('active', window.scrollY>500);
+    })
+
+    function scrollTopTop(){
+        window.scrollTo({
+            top:0, 
+            behavior: 'smooth'
+        })
+    }
+</script>
 
 </body>
 </html>
