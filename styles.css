@@ -53,6 +53,19 @@ img{
     opacity: 1;
 }
 
-.margin_p{
+.margin{
     margin: 15px;
+}
+
+a:link, a:visited {
+    /* background-color: #f44336; */
+    color: white;
+    /* padding: 15px 25px; */
+    text-align: center;
+    text-decoration: none;
+    /* display:contents; */
+}
+  
+a:hover, a:active {
+    background-color: rgb(15, 39, 21);
 }

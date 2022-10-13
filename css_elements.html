@@ -24,6 +24,9 @@
         <ol>
             <li><a href="#HTML Styles - CSS">Стили HTML — CSS</a></li>
             <li><a href="#HTML Links">HTML -ссылки</a></li>
+                <ul>
+                    <li><a href="#HTML Links - Different Colors">HTML-ссылки — разные цвета</a></li>
+                </ul>
         </ol>
     </div>
 
@@ -330,7 +333,72 @@
         </div>
     </div>
 
+    <!-- HTML -ссылки — разные цвета -->
+    <div>
+        <div>
+            <h2 id="HTML Links - Different Colors">HTML -ссылки — разные цвета</h2>
+            <p>HTML-ссылка отображается другим цветом в зависимости от того, была ли она посещена, не посещена или активна.</p>
+        </div>
+        <!-- Цвета HTML-ссылок -->
+        <div>
+            <h3>Цвета HTML-ссылок</h3>
+            <p>По умолчанию ссылка будет выглядеть так (во всех браузерах):</p>
+            <ul>
+                <li>Непосещенная ссылка подчеркнута и окрашена в синий цвет</li>
+                <li>Посещенная ссылка подчеркнута и окрашена в фиолетовый цвет</li>
+                <li>Активная ссылка подчеркнута и окрашена в красный цвет</li>
+            </ul>
+            <p>Вы можете изменить цвета состояния ссылки с помощью CSS:</p>
+            <div class="example">
+                <p>&lt;style&gt;</p>
+                <p>a:link {</p>
+                    <p class="margin">color: green;</p>
+                    <p class="margin"> background-color: transparent;</p>
+                    <p class="margin">text-decoration: none;</p>
+                <p>}</p> <br>
 
+                <p>a:visited {</p>
+                    <p class="margin">color: pink;</p>
+                    <p class="margin">background-color: transparent;</p>
+                    <p class="margin">text-decoration: none;</p>
+                <p>}</p> <br>
+
+                <p>a:hover {</p>
+                    <p class="margin">color: red;</p>
+                    <p class="margin">background-color: transparent;</p>
+                    <p class="margin">text-decoration: underline;</p>
+                <p>}</p> <br>
+
+                <p>a:active {</p>
+                    <p class="margin">color: yellow;</p>
+                    <p class="margin">background-color: transparent;</p>
+                    <p class="margin"> text-decoration: underline;</p>
+                <p>}</p>
+                <p>&lt;/style&gt;</p>
+            </div>
+        </div>
+        <!-- Кнопки ссылок -->
+        <div>
+            <h3>Кнопки ссылок</h3>
+            <p>Ссылку также можно оформить как кнопку с помощью CSS:</p>
+            <div class="example">
+                <p>&lt;style&gt;</p>
+                <p>a:link, a:visited {</p>
+                <p class="margin">background-color: #f44336;</p>
+                <p class="margin">color: white</p>
+                <p class="margin">padding: 15px 25px;</p>
+                <p class="margin">text-align: center;</p>
+                <p class="margin">text-decoration: none;</p>
+                <p class="margin">display: inline-block;</p>
+                <p>}</p>
+
+                <p>a:hover, a:active {</p>
+                <p class="margin">background-color: red;</p>
+                <p>}</p>
+                <p>&lt;/style&gt;</p>
+            </div>
+        </div>
+    </div>
 
 
 
