@@ -660,6 +660,32 @@
             </div>
             <p>Нам нужно найти координаты x и y для всех ребер круассана:</p>
             <img src="img/croissant(1).jpg" alt="круасан">
+            <p>Координаты идут парами, одна для оси x и одна для оси y:</p>
+            <div class="example">
+                &lt;area shape="poly" coords="275, 236, 287, 265, 301, 290, 294, 318, 304, 335, 301, 
+                347, 309, 376, 294, 404, 259, 407, 241, 423, 220, 421, 196, 437, 146, 428, 132, 410, 
+                163, 377, 169, 357, 189, 319, 234, 279, 249, 245" href="croissant.html" alt="круасан"&gt;
+            </div>
+            <p>Это область, которая становится кликабельной и перенаправляет пользователя на страницу «croissant.htm»:</p>
+            <img src="img/croissant(2).jpg" alt="круасан">
+        </div>
+        <!-- Карта изображений и JavaScript -->
+        <div>
+            <h3>Карта изображений и JavaScript</h3>
+            <p>Щелчковая область также может запускать функцию JavaScript.</p>
+            <p>Добавьте <b>click</b> событие к <b>&lt;area&gt;</b> элементу для выполнения функции JavaScript:</p>
+            <div>
+                <img src="img/workplace.jpg" alt="Workplace" usemap="#workmap2">
+
+                <map name="workmap2">
+                    <area shape="circle" coords="337, 302, 44" href="coffee.html" alt="Кофе" onclick="myFunction()">
+                    <script>
+                        function myFunction() {
+                          alert("Вы нажимаете на чашку кофе!");
+                        }
+                    </script>
+                </map>
+            </div>
         </div>
     </div>
 
