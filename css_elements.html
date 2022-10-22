@@ -27,9 +27,11 @@
                     <li><a href="#HTML Links - Different Colors">HTML-ссылки — разные цвета</a></li>
                     <li><a href="#Create Bookmarks">HTML-ссылки — создание закладок</a></li>
                 </ul>
-            <li><a href="#HTML Images">HTML -изображения</a></li>
+            <li><a href="#HTML Images">HTML-изображения</a></li>
                 <ul>
                     <li><a href="#HTML Image Maps">HTML-карты изображений</a></li>
+                    <li><a href="#HTML Background Images">HTML фоновые изображения</a></li>
+                    <li><a href="#HTML picture Element">HTML - элемент &lt;picture&gt;</a></li>
                 </ul>
         </ol>
     </div>
@@ -689,10 +691,107 @@
         </div>
     </div>
 
+    <!-- HTML фоновые изображения -->
+    <div>
+        <div>
+            <h2 id="HTML Background Images">HTML фоновые изображения</h2>
+            <p> Фоновое изображение можно указать практически для любого элемента HTML.</p>
+        </div>
+        <!-- Фоновое изображение в элементе HTML -->
+        <div>
+            <h3>Фоновое изображение в элементе HTML</h3>
+            <p>Чтобы добавить фоновое изображение к элементу HTML, используйте <b>style</b> атрибут HTML и <b>background-image</b> свойство CSS:</p>
+            <div class="example">
+                <p style="background-image: url('img/круасан.jpg');">
+                    Вы можете указать фоновые изображения
+                    для любого видимого элемента HTML.
+                    В этом примере фоновое изображение
+                    указано для элемента p.
+                    По умолчанию фоновое изображение
+                    будет повторяться в том направлении (направлениях), 
+                    где оно меньше, чем элемент, для
+                    которого оно указано. (Попробуйте изменить размер
+                    окна браузера, чтобы увидеть, как
+                    ведет себя фоновое изображение).</p>
+            </div>
+            <p>Вы также можете указать фоновое изображение в <b>&lt;style&gt;</b> элементе, в <b>&lt;head&gt;</b> разделе:</p>
+            <div class="example">
+                <p>&lt;head&gt;</p>
+                <p>&lt;style&gt;</p>
+                <p>p {</p>
+                    <p class="margin">background-image: url('img/круасан.jpg');</p>
+                <p>}</p>
+                <p>&lt;/style&gt;</p>
+                <p>&lt;/head&gt;</p>
+            </div>
+         </div>
+         <!-- Фоновое изображение на странице -->
+         <div>
+            <h3>Фоновое изображение на странице</h3>
+            <p>Если вы хотите, чтобы вся страница имела фоновое изображение, вы должны указать фоновое изображение для <b>&lt;body&gt;</b> элемента:</p>
+            <div class="example">
+                <p>&lt;head&gt;</p>
+                <p>&lt;style&gt;</p>
+                <p>body {</p>
+                    <p class="margin">background-image: url('img/круасан.jpg');</p>
+                <p>}</p>
+                <p>&lt;/style&gt;</p>
+                <p>&lt;/head&gt;</p>
+            </div>
+         </div>
+         <!-- Повторение фона -->
+         <div>
+            <h3>Повторение фона</h3>
+            <p>Если фоновое изображение меньше элемента, изображение будет повторяться по горизонтали и вертикали, пока не достигнет конца элемента:</p>
+            <div class="example">
+                <p style="background-image: url('img/300px-The_Scream.jpg');">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, adipisci dignissimos! Quisquam accusantium mollitia necessitatibus eum aut alias facere fugit consequuntur adipisci et nisi tenetur, expedita ex quas neque asperiores. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam distinctio ipsam voluptate asperiores voluptatem dolorum, enim adipisci facere accusamus nobis quos vel nesciunt amet reiciendis fugiat! Magni aperiam omnis obcaecati. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque quasi, quae iusto in, beatae illum hic, sed consequatur deleniti quam temporibus magnam nisi. Maiores, esse est. Iure at optio quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quasi molestiae assumenda numquam? Nisi accusantium suscipit perferendis ea tempore earum excepturi molestias asperiores corporis veritatis, odit deleniti repudiandae numquam laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod corrupti voluptatum id, voluptatem ratione error, beatae cumque a eligendi repudiandae sed placeat deleniti commodi blanditiis, harum laboriosam? Quod, a non. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nesciunt minus itaque veniam corporis asperiores perferendis eaque tempore sed, quidem in ullam nobis ipsa, deserunt, excepturi a culpa exercitationem necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque velit non, atque sed beatae inventore? Dolor qui voluptatibus assumenda fuga sint ab, quisquam tempora odio perspiciatis blanditiis voluptatum dolores necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam molestias quod nihil facilis earum facere repudiandae illum obcaecati, recusandae ab possimus, excepturi, fugit sed iusto itaque quos eaque iste ipsam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat labore aspernatur quo voluptate repellendus nobis, nostrum adipisci fugiat sint recusandae pariatur. Dolore eveniet dolorum aliquid optio, nulla quos. Ratione, minima? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo deleniti enim consectetur, saepe necessitatibus aperiam eius molestias earum tempore in nemo nisi accusantium iure officia praesentium veritatis sint voluptatem alias? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nobis, quisquam necessitatibus laboriosam ipsum unde aliquam dolores, possimus eum, at ratione blanditiis fuga voluptate quo rerum sed est ducimus ea. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur reprehenderit veniam iusto? Quod quia doloribus laborum hic cumque dolore aspernatur repellat unde laudantium? Adipisci pariatur eligendi suscipit quas corporis ipsa. Lorem ipsum dolor sit amet, consectetur adipisicing elit. In architecto ab odio officia ratione, totam expedita doloribus similique facere eaque natus repellat perspiciatis doloremque impedit debitis nihil corporis facilis voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, temporibus voluptas dolorum quidem deserunt pariatur blanditiis veritatis voluptate non itaque laudantium nisi expedita beatae quo fugiat ipsum saepe. A, sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum alias ea, aliquam blanditiis, voluptatibus totam eius beatae voluptatem praesentium, sequi nobis rerum odio aliquid placeat enim? Tenetur dignissimos ea velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, aspernatur in sunt reiciendis a magnam aperiam voluptate praesentium obcaecati quas deleniti est? Nesciunt, eaque quam eligendi eius consequuntur officiis quia? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, quia cum? Nihil quo eligendi voluptatum omnis nostrum quasi ad quisquam excepturi doloremque ipsa! Odit debitis dolores facere vel voluptatem. Aperiam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est odit ducimus sequi, ullam quaerat reiciendis expedita velit alias fuga quae ratione autem delectus magnam placeat fugit molestias optio quis iure? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, hic earum soluta corporis ad voluptatibus aperiam repellendus ducimus facere. Magni cum enim culpa sit aliquam iure incidunt, in rerum molestiae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, ipsum laborum odio laudantium pariatur sapiente unde ea soluta perspiciatis dolore et. Enim sapiente accusamus autem cum aut voluptatum unde temporibus! </p>
+            </div>
+            <p>Чтобы фоновое изображение не повторялось, задайте для <b>background-repeat</b> свойства значение <b>no-repeat</b>.</p>
+            <div class="example">
+                <p style="background-image: url('img/300px-The_Scream.jpg'); background-repeat: no-repeat;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, adipisci dignissimos! Quisquam accusantium mollitia necessitatibus eum aut alias facere fugit consequuntur adipisci et nisi tenetur, expedita ex quas neque asperiores. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam distinctio ipsam voluptate asperiores voluptatem dolorum, enim adipisci facere accusamus nobis quos vel nesciunt amet reiciendis fugiat! Magni aperiam omnis obcaecati. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque quasi, quae iusto in, beatae illum hic, sed consequatur deleniti quam temporibus magnam nisi. Maiores, esse est. Iure at optio quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quasi molestiae assumenda numquam? Nisi accusantium suscipit perferendis ea tempore earum excepturi molestias asperiores corporis veritatis, odit deleniti repudiandae numquam laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod corrupti voluptatum id, voluptatem ratione error, beatae cumque a eligendi repudiandae sed placeat deleniti commodi blanditiis, harum laboriosam? Quod, a non. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nesciunt minus itaque veniam corporis asperiores perferendis eaque tempore sed, quidem in ullam nobis ipsa, deserunt, excepturi a culpa exercitationem necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque velit non, atque sed beatae inventore? Dolor qui voluptatibus assumenda fuga sint ab, quisquam tempora odio perspiciatis blanditiis voluptatum dolores necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam molestias quod nihil facilis earum facere repudiandae illum obcaecati, recusandae ab possimus, excepturi, fugit sed iusto itaque quos eaque iste ipsam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat labore aspernatur quo voluptate repellendus nobis, nostrum adipisci fugiat sint recusandae pariatur. Dolore eveniet dolorum aliquid optio, nulla quos. Ratione, minima? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo deleniti enim consectetur, saepe necessitatibus aperiam eius molestias earum tempore in nemo nisi accusantium iure officia praesentium veritatis sint voluptatem alias? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nobis, quisquam necessitatibus laboriosam ipsum unde aliquam dolores, possimus eum, at ratione blanditiis fuga voluptate quo rerum sed est ducimus ea. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur reprehenderit veniam iusto? Quod quia doloribus laborum hic cumque dolore aspernatur repellat unde laudantium? Adipisci pariatur eligendi suscipit quas corporis ipsa. Lorem ipsum dolor sit amet, consectetur adipisicing elit. In architecto ab odio officia ratione, totam expedita doloribus similique facere eaque natus repellat perspiciatis doloremque impedit debitis nihil corporis facilis voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, temporibus voluptas dolorum quidem deserunt pariatur blanditiis veritatis voluptate non itaque laudantium nisi expedita beatae quo fugiat ipsum saepe. A, sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum alias ea, aliquam blanditiis, voluptatibus totam eius beatae voluptatem praesentium, sequi nobis rerum odio aliquid placeat enim? Tenetur dignissimos ea velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, aspernatur in sunt reiciendis a magnam aperiam voluptate praesentium obcaecati quas deleniti est? Nesciunt, eaque quam eligendi eius consequuntur officiis quia? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, quia cum? Nihil quo eligendi voluptatum omnis nostrum quasi ad quisquam excepturi doloremque ipsa! Odit debitis dolores facere vel voluptatem. Aperiam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est odit ducimus sequi, ullam quaerat reiciendis expedita velit alias fuga quae ratione autem delectus magnam placeat fugit molestias optio quis iure? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, hic earum soluta corporis ad voluptatibus aperiam repellendus ducimus facere. Magni cum enim culpa sit aliquam iure incidunt, in rerum molestiae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, ipsum laborum odio laudantium pariatur sapiente unde ea soluta perspiciatis dolore et. Enim sapiente accusamus autem cum aut voluptatum unde temporibus!</p>
+            </div>
+         </div>
+         <!-- Фоновая обложка -->
+         <div>
+            <h3>Фоновая обложка</h3>
+            <p>Если вы хотите, чтобы фоновое изображение покрывало весь элемент, вы можете установить для <b>background-size</b> свойства значение <b>cover</b>.</p>
+            <p>Кроме того, чтобы убедиться, что весь элемент всегда покрыт, установите для <B>background-attachment</B> свойства значение <b>fixed</b>.</p>
+            <p>Таким образом, фоновое изображение будет охватывать весь элемент без растягивания (изображение сохранит свои первоначальные пропорции):</p>
+            <div class="example">
+                <p>&lt;head&gt;</p>
+                <p>&lt;style&gt;</p>
+                <p>body {</p>
+                    <p class="margin">background-image: url('img/круасан.jpg');</p>
+                    <p class="margin">background-repeat: no-repeat;</p>
+                    <p class="margin">background-attachment: fixed;</p>
+                    <p class="margin">background-size: cover;</p>
+                <p>}</p>
+                <p>&lt;/style&gt;</p>
+                <p>&lt;/head&gt;</p>
+            </div>
+            <div class="example">
+                <p>Результат:</p>
+                <p style="background-image: url('img/300px-The_Scream.jpg'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, adipisci dignissimos! Quisquam accusantium mollitia necessitatibus eum aut alias facere fugit consequuntur adipisci et nisi tenetur, expedita ex quas neque asperiores. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam distinctio ipsam voluptate asperiores voluptatem dolorum, enim adipisci facere accusamus nobis quos vel nesciunt amet reiciendis fugiat! Magni aperiam omnis obcaecati. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque quasi, quae iusto in, beatae illum hic, sed consequatur deleniti quam temporibus magnam nisi. Maiores, esse est. Iure at optio quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quasi molestiae assumenda numquam? Nisi accusantium suscipit perferendis ea tempore earum excepturi molestias asperiores corporis veritatis, odit deleniti repudiandae numquam laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod corrupti voluptatum id, voluptatem ratione error, beatae cumque a eligendi repudiandae sed placeat deleniti commodi blanditiis, harum laboriosam? Quod, a non. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nesciunt minus itaque veniam corporis asperiores perferendis eaque tempore sed, quidem in ullam nobis ipsa, deserunt, excepturi a culpa exercitationem necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque velit non, atque sed beatae inventore? Dolor qui voluptatibus assumenda fuga sint ab, quisquam tempora odio perspiciatis blanditiis voluptatum dolores necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam molestias quod nihil facilis earum facere repudiandae illum obcaecati, recusandae ab possimus, excepturi, fugit sed iusto itaque quos eaque iste ipsam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat labore aspernatur quo voluptate repellendus nobis, nostrum adipisci fugiat sint recusandae pariatur. Dolore eveniet dolorum aliquid optio, nulla quos. Ratione, minima? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo deleniti enim consectetur, saepe necessitatibus aperiam eius molestias earum tempore in nemo nisi accusantium iure officia praesentium veritatis sint voluptatem alias? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nobis, quisquam necessitatibus laboriosam ipsum unde aliquam dolores, possimus eum, at ratione blanditiis fuga voluptate quo rerum sed est ducimus ea. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur reprehenderit veniam iusto? Quod quia doloribus laborum hic cumque dolore aspernatur repellat unde laudantium? Adipisci pariatur eligendi suscipit quas corporis ipsa. Lorem ipsum dolor sit amet, consectetur adipisicing elit. In architecto ab odio officia ratione, totam expedita doloribus similique facere eaque natus repellat perspiciatis doloremque impedit debitis nihil corporis facilis voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, temporibus voluptas dolorum quidem deserunt pariatur blanditiis veritatis voluptate non itaque laudantium nisi expedita beatae quo fugiat ipsum saepe. A, sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum alias ea, aliquam blanditiis, voluptatibus totam eius beatae voluptatem praesentium, sequi nobis rerum odio aliquid placeat enim? Tenetur dignissimos ea velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, aspernatur in sunt reiciendis a magnam aperiam voluptate praesentium obcaecati quas deleniti est? Nesciunt, eaque quam eligendi eius consequuntur officiis quia? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, quia cum? Nihil quo eligendi voluptatum omnis nostrum quasi ad quisquam excepturi doloremque ipsa! Odit debitis dolores facere vel voluptatem. Aperiam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est odit ducimus sequi, ullam quaerat reiciendis expedita velit alias fuga quae ratione autem delectus magnam placeat fugit molestias optio quis iure? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, hic earum soluta corporis ad voluptatibus aperiam repellendus ducimus facere. Magni cum enim culpa sit aliquam iure incidunt, in rerum molestiae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, ipsum laborum odio laudantium pariatur sapiente unde ea soluta perspiciatis dolore et. Enim sapiente accusamus autem cum aut voluptatum unde temporibus!</p>
+            </div>
+         </div>
+         <!-- Растяжка фона -->
+         <div>
+            <h1>Растяжка фона</h1>
+            <p>Если вы хотите, чтобы фоновое изображение растягивалось, чтобы соответствовать всему элементу, вы можете установить для <b>background-size</b> свойства значение <b>100% 100%</b>:</p>
+            <div class="example">
+                <p style="background-image: url('img/300px-The_Scream.jpg'); background-size: 100% 100%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, adipisci dignissimos! Quisquam accusantium mollitia necessitatibus eum aut alias facere fugit consequuntur adipisci et nisi tenetur, expedita ex quas neque asperiores. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam distinctio ipsam voluptate asperiores voluptatem dolorum, enim adipisci facere accusamus nobis quos vel nesciunt amet reiciendis fugiat! Magni aperiam omnis obcaecati. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque quasi, quae iusto in, beatae illum hic, sed consequatur deleniti quam temporibus magnam nisi. Maiores, esse est. Iure at optio quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quasi molestiae assumenda numquam? Nisi accusantium suscipit perferendis ea tempore earum excepturi molestias asperiores corporis veritatis, odit deleniti repudiandae numquam laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod corrupti voluptatum id, voluptatem ratione error, beatae cumque a eligendi repudiandae sed placeat deleniti commodi blanditiis, harum laboriosam? Quod, a non. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nesciunt minus itaque veniam corporis asperiores perferendis eaque tempore sed, quidem in ullam nobis ipsa, deserunt, excepturi a culpa exercitationem necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque velit non, atque sed beatae inventore? Dolor qui voluptatibus assumenda fuga sint ab, quisquam tempora odio perspiciatis blanditiis voluptatum dolores necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam molestias quod nihil facilis earum facere repudiandae illum obcaecati, recusandae ab possimus, excepturi, fugit sed iusto itaque quos eaque iste ipsam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat labore aspernatur quo voluptate repellendus nobis, nostrum adipisci fugiat sint recusandae pariatur. Dolore eveniet dolorum aliquid optio, nulla quos. Ratione, minima? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo deleniti enim consectetur, saepe necessitatibus aperiam eius molestias earum tempore in nemo nisi accusantium iure officia praesentium veritatis sint voluptatem alias? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nobis, quisquam necessitatibus laboriosam ipsum unde aliquam dolores, possimus eum, at ratione blanditiis fuga voluptate quo rerum sed est ducimus ea. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur reprehenderit veniam iusto? Quod quia doloribus laborum hic cumque dolore aspernatur repellat unde laudantium? Adipisci pariatur eligendi suscipit quas corporis ipsa. Lorem ipsum dolor sit amet, consectetur adipisicing elit. In architecto ab odio officia ratione, totam expedita doloribus similique facere eaque natus repellat perspiciatis doloremque impedit debitis nihil corporis facilis voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, temporibus voluptas dolorum quidem deserunt pariatur blanditiis veritatis voluptate non itaque laudantium nisi expedita beatae quo fugiat ipsum saepe. A, sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum alias ea, aliquam blanditiis, voluptatibus totam eius beatae voluptatem praesentium, sequi nobis rerum odio aliquid placeat enim? Tenetur dignissimos ea velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, aspernatur in sunt reiciendis a magnam aperiam voluptate praesentium obcaecati quas deleniti est? Nesciunt, eaque quam eligendi eius consequuntur officiis quia? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, quia cum? Nihil quo eligendi voluptatum omnis nostrum quasi ad quisquam excepturi doloremque ipsa! Odit debitis dolores facere vel voluptatem. Aperiam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est odit ducimus sequi, ullam quaerat reiciendis expedita velit alias fuga quae ratione autem delectus magnam placeat fugit molestias optio quis iure? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, hic earum soluta corporis ad voluptatibus aperiam repellendus ducimus facere. Magni cum enim culpa sit aliquam iure incidunt, in rerum molestiae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, ipsum laborum odio laudantium pariatur sapiente unde ea soluta perspiciatis dolore et. Enim sapiente accusamus autem cum aut voluptatum unde temporibus!</p>
+            </div>
+            <p>Попробуйте изменить размер окна браузера, и вы увидите, что изображение растягивается, но всегда закрывает весь элемент.</p>
+         </div>
+    </div>
 
-
-
-
+    <!-- HTML - элемент <picture> -->
+    <div>
+        <div>
+            <h2 id="HTML picture Element">HTML - элемент &lt;picture&gt;</h2>
+            <p>Элемент HTML <b>&lt;picture&gt;</b> позволяет отображать разные изображения для разных устройств или размеров экрана.</p>
+        </div>
+    </div>
 
 
 
