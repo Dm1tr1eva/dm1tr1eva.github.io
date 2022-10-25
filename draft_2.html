@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="ru">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>CSS</title>
-<link rel="stylesheet" href="styles.css">
-
+    <title>HTML. Раздел 2.</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/Green-Leaves.png">
 </head>
 
 <body style="background-color:rgb(92, 154, 104)">
@@ -13,7 +13,7 @@
     <div class="upward" onclick="scrollTopTop()"></div>
     <section>
     <div>
-        <h1>CSS</h1>
+        <h1>HTML. Раздел 2.</h1>
     </div>
 
     <div>
@@ -280,13 +280,13 @@
             <p>В обоих приведенных выше примерах в атрибуте <b>href</b> используется <b>абсолютный URL</b>-адрес (полный веб-адрес).</p>
             <p>Локальная ссылка (ссылка на страницу того же веб-сайта) указывается <b>с относительным URL</b>-адресом (без части «https://www»):</p>
             <div class="example">
-                <h4>абсолютный URL-адрес</h4>
+                <h4>Абсолютный URL-адрес</h4>
                 <p><a href="https://www.w3.org/">W3C</a></p>
                 <p><a href="https://www.google.com/">Google</a></p>
 
-                <h4>относительный URL-адрес</h4>
-                <p><a href="./Черновик.html">HTML </a></p>
-                <p><a href="./css_elements.html">CSS </a></p>
+                <h4>Относительный URL-адрес</h4>
+                <p><a href="./draft_1.html">HTML. Раздел 1.</a></p>
+                <p><a href="./draft_2.html">HTML. Раздел 2.</a></p>
             </div>
         </div>
         <!-- HTML-ссылки — использование изображения в качестве ссылки -->
@@ -335,7 +335,7 @@
                 <img src="img/Chat-Emoticon-PNG-Picture.png" alt="смайлик" style="width:42px;height:42px;">
                 
                 <p>Ссылка на страницу, расположенную в той же папке, что и данный документ: </p>
-                <a href="./Черновик.html">Конспект по HTML</a>
+                <a href="./draft_1.html">Конспект по HTML</a>
              </div>
         </div>
     </div>
@@ -798,10 +798,10 @@
             <p>Элемент HTML <b>&lt;picture&gt;</b> дает веб-разработчикам больше гибкости при указании ресурсов изображений.</p>
             <p>Элемент <b>&lt;picture&gt;</b> содержит один или несколько <b>&lt;source&gt;</b> элементов, каждый из которых ссылается на разные изображения через <b>srcset</b> атрибут. Таким образом, браузер может выбрать изображение, которое лучше всего подходит для текущего вида и/или устройства.</p>
             <p>У каждого <b>&lt;source&gt;</b> элемента есть <b>media</b> атрибут, который определяет, когда изображение является наиболее подходящим.</p>
-            <div class="example">
+            <div>
                 <picture>
                     <source media="(min-width: 950px)" srcset="img/Natural.jfif" width="250" height="333">
-                    <img src="img/Без названия.png" alt="Paris" width="250" height="333">
+                    <img src="img/Без названия.png" alt="Paris" width="250" height="333" class="example">
                 </picture>
             </div>
             <p class="notes"><b>Примечание.</b> Всегда указывайте <b>&lt;img&gt;</b> элемент как последний дочерний элемент <b>&lt;picture&gt;</b> элемента. Элемент <b>&lt;img&gt;</b> используется браузерами, которые не поддерживают этот <b>&lt;picture&gt;</b> элемент, или если ни один из <b>&lt;source&gt;</b> тегов не совпадает.</p>
@@ -814,27 +814,16 @@
             <p>Если у вас небольшой экран или устройство, нет необходимости загружать большой файл изображения. Браузер будет использовать первый <b>&lt;source&gt;</b> элемент с соответствующими значениями атрибутов и проигнорирует любой из следующих элементов.</p>
             <h4>2. Поддержка форматов</h4>
             <p>Некоторые браузеры или устройства могут поддерживать не все форматы изображений. Используя этот <b>&lt;picture&gt;</b> элемент, вы можете добавлять изображения всех форматов, и браузер будет использовать первый формат, который он распознает, и проигнорирует любой из следующих элементов.</p>
-            <div class="example">
+            <div>
                 <picture>
                     <source srcset="img/круасан.jpg" width="250" height="333">
                     <source srcset="img/pngegg.png" width="250" height="333">
-                    <img src="img/programming.gif" alt="programming">
+                    <img src="img/programming.gif" alt="programming" class="example">
                 </picture>
             </div>
             <p class="notes"><b>Примечание.</b> Браузер будет использовать первый <b>&lt;source&gt;</b> элемент с соответствующими значениями атрибутов и игнорировать все последующие <b>&lt;source&gt;</b> элементы.</p>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
 
 </section>
 <script>

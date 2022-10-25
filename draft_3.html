@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>HTML Introduction</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/Green-Leaves.png">
+</head>
+
+<body style="background-color:rgb(92, 154, 104)">
+
+    <div class="upward" onclick="scrollTopTop()"></div>
+    
+        <div>
+            <h1>HTML. Раздел 3.</h1>
+        </div>
+
+        <div>
+            <h2>Содержание:</h2>
+        </div>
+
+        <div>
+            <ol>
+                <li><a href="#Favicon">HTML Фавикон</a></li>
+            </ol>
+        </div>
+
+        <!-- HTML Фавикон -->
+        <div>
+            <div>
+                <h2 id="Favicon">HTML Фавикон</h2>
+                <p>Фавикон — это небольшое изображение, отображаемое рядом с заголовком страницы во вкладке браузера.</p>
+            </div>
+            <!-- Как добавить фавикон в HTML -->
+            <div>
+                <h3>Как добавить фавикон в HTML</h3>
+                <p>Вы можете использовать любое понравившееся вам изображение в качестве фавиконки.</p>
+                <p class="notes"><b>Совет:</b> фавикон — это небольшое изображение, поэтому оно должно быть простым и контрастным</p>
+                <p>Изображение фавиконки отображается слева от заголовка страницы на вкладке браузера.</p>
+                <p>Чтобы добавить значок на свой веб-сайт, либо сохраните изображение значка в корневом каталоге вашего веб-сервера, либо создайте папку в корневом каталоге с именем images и сохраните изображение значка в этой папке. Распространенное название изображения фавикона — «favicon.ico».</p>
+                <p>Затем добавьте <b>&lt;link&gt;</b> элемент в файл index.html после <b>&lt;title&gt;</b> элемента, например:</p>
+                <div class="example">
+                    <p>&lt;!DOCTYPE html&gt;</p>
+                    <p>&lt;html&gt;</p>
+                    <p>&lt;head&gt;</p>
+                        <p class="margin">&lt;title&gt;&lt;/title&gt;</p>
+                        <p class="margin">&lt;link rel="icon" href="img/......"&gt;</p>
+                    <p>&lt;/head&gt;</p>
+                    <p>&lt;body&gt;</p>
+                    <br>
+                    <p>&lt;h1&gt;This is a Heading&lt;/h1&gt;</p>
+                    <p>&lt;p&gt;This is a paragraph.&lt;/p&gt;</p>
+                    <br>
+                    <p>&lt;/body&gt;</p>
+                    <p>&lt;/html&gt;</p>
+                </div>
+                <p>Теперь сохраните файл index.html и перезагрузите его в браузере. Теперь на вкладке вашего браузера слева от заголовка страницы должно отображаться изображение вашего фавикона.</p>
+            </div>
+        </div>
+
+
+
+
+    
+
+    <script>
+        window.addEventListener('scroll', function(){
+            let scroll = document.querySelector('.upward');
+            scroll.classList.toggle('active', window.scrollY>500);
+        })
+
+        function scrollTopTop(){
+            window.scrollTo({
+                top:0, 
+                behavior: 'smooth'
+            })
+        }
+    </script>
+
+</body>
+</html>
