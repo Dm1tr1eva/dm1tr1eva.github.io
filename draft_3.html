@@ -169,8 +169,203 @@
             <!-- Как добавить границу -->
             <div>
                 <h3>Как добавить границу</h3>
-
-
+                <p>Когда вы добавляете границу к таблице, вы также добавляете границы вокруг каждой ячейки таблицы:</p>
+                <div>
+                    <table style="width:100%">
+                        <tr>
+                            <th>Человек 1</th>
+                            <th>Человек 2</th>
+                            <th>Человек 3</th>
+                        </tr>
+                        <tr>
+                            <td>Эмиль</td>
+                            <td>Тобиас</td>
+                            <td>Линус</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>14</td>
+                            <td>10</td>
+                        </tr>
+                    </table>
+                </div>
+                <p>Чтобы добавить границу, используйте <b>border</b> свойство CSS для элементов <b>table</b>, <b>th</b> и <b>td</b>:</p>
+                <div class="example">
+                    <p>table, th, td {</p>
+                        <p class="margin">border: 1px solid black;</p>
+                    <p>}</p>
+                </div>
+            </div>
+            <!-- Свернутые границы таблицы -->
+            <div>
+                <h3>Свернутые границы таблицы</h3>
+                <p>Чтобы избежать двойных границ, как в приведенном выше примере, установите для <b>border-collapse</b> свойства CSS значение <b>collapse</b>.</p>
+                <p>Это заставит границы рухнуть в единую границу:</p>
+                <div>
+                    <table style="width:100%; border-collapse: collapse;">
+                        <tr>
+                            <th>Человек 1</th>
+                            <th>Человек 2</th>
+                            <th>Человек 3</th>
+                        </tr>
+                        <tr>
+                            <td>Эмиль</td>
+                            <td>Тобиас</td>
+                            <td>Линус</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>14</td>
+                            <td>10</td>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+                <div class="example">
+                    <p>table, th, td {</p>
+                        <p class="margin">border: 1px solid black;</p>
+                        <p class="margin">border-collapse: collapse;</p>
+                    <p>}</p>
+                </div>
+            </div>
+            <!-- Невидимые границы -->
+            <div>
+                <h3>Невидимые границы</h3>
+                <p>Если вы установите цвет фона для каждой ячейки и зададите границе белый цвет (такой же, как фон документа), вы получите впечатление невидимой границы:</p>
+                <div>
+                    <table style="width:100%; 
+                    border: 5px solid rgb(92, 154, 104); 
+                    border-collapse: collapse; 
+                    background-color: #96D4D4;" 
+                    class="t">
+                        <tr>
+                            <th>Человек 1</th>
+                            <th>Человек 2</th>
+                            <th>Человек 3</th>
+                        </tr>
+                        <tr>
+                            <td>Эмиль</td>
+                            <td>Тобиас</td>
+                            <td>Линус</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>14</td>
+                            <td>10</td>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+                <div class="example">
+                    <p>table, th, td {</p>
+                        <p class="margin">border: 1px solid white;</p>
+                        <p class="margin">border-collapse: collapse;</p>
+                    <p>}</p>
+                    <p>th, td {</p>
+                        <p class="margin">background-color: #96D4D4;</p>
+                    <p>}</p>
+                </div>
+            </div>
+            <!-- Круглые границы -->
+            <div>
+                <h3>Круглые границы</h3>
+                <p>Со <b>border-radius</b> свойством границы получают закругленные углы:</p>
+                <div>
+                    <table style="width:100%; 
+                    border-radius: 10px;" 
+                    class="t1">
+                        <tr>
+                            <th>Человек 1</th>
+                            <th>Человек 2</th>
+                            <th>Человек 3</th>
+                        </tr>
+                        <tr>
+                            <td>Эмиль</td>
+                            <td>Тобиас</td>
+                            <td>Линус</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>14</td>
+                            <td>10</td>
+                        </tr>
+                    </table> 
+                </div>
+                <br>
+                <div class="example">
+                    <p>table, th, td {</p>
+                        <p class="margin">border: 1px solid black;</p>
+                        <p class="margin">border-radius: 10px;</p>
+                    <p>}</p>
+                </div>
+                <p>Пропустите границу вокруг таблицы, исключив ее <b>table</b> из селектора css:</p>
+                <div>
+                    <table style="width:100%;
+                    border: 5px solid rgb(92, 154, 104); 
+                    border-radius: 10px;" 
+                    class="t1">
+                        <tr>
+                            <th>Человек 1</th>
+                            <th>Человек 2</th>
+                            <th>Человек 3</th>
+                        </tr>
+                        <tr>
+                            <td>Эмиль</td>
+                            <td>Тобиас</td>
+                            <td>Линус</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>14</td>
+                            <td>10</td>
+                        </tr>
+                    </table> 
+                </div>
+                <br>
+                <div class="example">
+                    <p>th, td {</p>
+                    <p>border: 1px solid black;</p>
+                    <p>border-radius: 10px;</p>
+                    <p>}</p>
+                </div>
+            </div>
+            <!-- Пунктирные границы таблицы -->
+            <div>
+                <h3>Пунктирные границы таблицы</h3>
+                <p>С помощью <b>border-style</b> свойства вы можете установить внешний вид границы.</p>
+                <div>
+                    <table style="width:100%;
+                    border-style: dotted;
+                    border-collapse: collapse;" 
+                    class="t2">
+                        <tr>
+                            <th>Человек 1</th>
+                            <th>Человек 2</th>
+                            <th>Человек 3</th>
+                        </tr>
+                        <tr>
+                            <td>Эмиль</td>
+                            <td>Тобиас</td>
+                            <td>Линус</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>14</td>
+                            <td>10</td>
+                        </tr>
+                    </table> 
+                </div>
+                <p>Допускаются следующие значения:</p>
+                <ul>
+                    <li>dotted</li>
+                    <table border-style: dotted;>
+                        <tr>
+                            <th>Человек 1</th>
+                            <th>Человек 2</th>
+                            <th>Человек 3</th>
+                        </tr>
+                    </table>
+                </ul>
 
             </div>
         </div>

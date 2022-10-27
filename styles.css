@@ -78,3 +78,15 @@ a:hover, a:active {
 table, th, td {
     border:1px solid black;
   }
+
+.t th, .t td {
+    border: 5px solid rgb(92, 154, 104);
+}
+
+.t1 th, .t1 td {
+    border-radius: 10px;
+}
+
+.t2 th, .t2 td {
+    border-style: dotted;
+}
