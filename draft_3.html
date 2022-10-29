@@ -24,6 +24,11 @@
                 <li><a href="#HTML Tables">HTML-таблицы</a></li>
                     <ul>
                         <li><a href="#Table Borders">Границы таблицы HTML</a></li>
+                        <li><a href="#Table Sizes">Размеры HTML-таблиц</a></li>
+                        <li><a href="#Table Headers">Заголовки таблицы HTML</a></li>
+                        <li><a href="#Table Padding & Spacing">Padding & Spacing HTML-таблицы</a></li>
+                        <li><a href="#Table Colspan & Rowspan">Таблица HTML Colspan и Rowspan</a></li>
+                        <li><a href="#Table Styling">Стили HTML-таблиц</a></li>
                     </ul>
             </ol>
         </div>
@@ -358,16 +363,394 @@
                 <p>Допускаются следующие значения:</p>
                 <ul>
                     <li>dotted</li>
-                    <table border-style: dotted;>
-                        <tr>
-                            <th>Человек 1</th>
-                            <th>Человек 2</th>
-                            <th>Человек 3</th>
-                        </tr>
-                    </table>
+                    <li>dashed</li>
+                    <li>solid</li>
+                    <li>double</li>
+                    <li>groove</li>
+                    <li>ridge</li>
+                    <li>inset</li>
+                    <li>outset</li>
+                    <li>none</li>
+                    <li>hidden</li>
                 </ul>
-
+                <div class="example">
+                    <p>th, td {</p>
+                        <p class="margin">border-style: dotted;</p>
+                    <p>}</p>
+                </div>
             </div>
+            <!-- Цвет границы -->
+            <div>
+                <h3>Цвет границы</h3>
+                <p>С помощью <b>border-color</b> свойства вы можете установить цвет границы.</p>
+                <div class="example">
+                    <p>th, td {</p>
+                        <p class="margin">border-color: #96D4D4;</p>
+                    <p>}</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Размеры HTML -таблиц -->
+        <div>
+            <div>
+                <h2 id="Table Sizes">Размеры HTML-таблиц</h2>
+                <p>HTML-таблицы могут иметь разные размеры для каждого столбца, строки или всей таблицы.</p>
+                <p>Используйте <b>style</b> атрибут со свойствами <b>width</b> или <b>height</b>, чтобы указать размер таблицы, строки или столбца.</p>
+            </div>
+            <!-- Ширина таблицы HTML -->
+            <div>
+                <h3>Ширина таблицы HTML</h3>
+                <p>Чтобы установить ширину таблицы, добавьте к элементу <b>&lt;table&gt;</b> атрибут <b>style</b>:</p>
+                <div class="example">
+                    <p>Установите ширину таблицы на 100%:</p>
+                    <table style="width:100%">
+                        <tr>
+                          <th>Firstname</th>
+                          <th>Lastname</th>
+                          <th>Age</th>
+                        </tr>
+                        <tr>
+                          <td>Jill</td>
+                          <td>Smith</td>
+                          <td>50</td>
+                        </tr>
+                        <tr>
+                          <td>Eve</td>
+                          <td>Jackson</td>
+                          <td>94</td>
+                        </tr>
+                      </table>
+                </div>
+                <p class="notes"><b>Примечание.</b> Использование процента в качестве единицы измерения ширины означает, насколько широким будет этот элемент по сравнению с его родительским элементом, которым в данном случае является <b>&lt;body&gt;</b> элемент.</p>
+            </div>
+            <!-- Ширина столбца таблицы HTML -->
+            <div>
+                <h3>Ширина столбца таблицы HTML</h3>
+                <p>Чтобы установить размер определенного столбца, добавьте <b>style</b> атрибут к элементу <b>&lt;th&gt;</b> или <b>&lt;td&gt;</b>:</p>
+                <div class="example">
+                    <p>Установите ширину первого столбца на 70%:</p>
+                    <table style="width:100%">
+                        <tr>
+                          <th style="width:70%">Firstname</th>
+                          <th>Lastname</th>
+                          <th>Age</th>
+                        </tr>
+                        <tr>
+                          <td>Jill</td>
+                          <td>Smith</td>
+                          <td>50</td>
+                        </tr>
+                        <tr>
+                          <td>Eve</td>
+                          <td>Jackson</td>
+                          <td>94</td>
+                        </tr>
+                      </table>
+                </div>
+            </div>
+            <!-- Высота строки таблицы HTML -->
+            <div>
+                <h3>Высота строки таблицы HTML</h3>
+                <p>Чтобы установить высоту определенной строки, добавьте <b>style</b> атрибут к элементу строки таблицы:</p>
+                <div class="example">
+                    <p>Установите высоту второй строки на 200 пикселей:</p>
+                    <table style="width:100%">
+                        <tr>
+                          <th>Firstname</th>
+                          <th>Lastname</th>
+                          <th>Age</th>
+                        </tr>
+                        <tr style="height:200px">
+                          <td>Jill</td>
+                          <td>Smith</td>
+                          <td>50</td>
+                        </tr>
+                        <tr>
+                          <td>Eve</td>
+                          <td>Jackson</td>
+                          <td>94</td>
+                        </tr>
+                      </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Заголовки таблицы HTML -->
+        <div>
+            <div>
+                <h2 id="Table Headers">Заголовки таблицы HTML</h2>
+                <p>Таблицы HTML могут иметь заголовки для каждого столбца или строки или для многих столбцов/строк.</p>
+            </div>
+            <!-- Заголовки таблицы HTML -->
+            <div>
+                <h2>Заголовки таблицы HTML</h2>
+                <p>Заголовки таблиц определяются с помощью <b>th</b> элементов. Каждый <b>th</b> элемент представляет ячейку таблицы.</p>
+                <div class="example">
+                    <table style="width:100%">
+                        <tr>
+                          <th>Firstname</th>
+                          <th>Lastname</th>
+                          <th>Age</th>
+                        </tr>
+                        <tr>
+                          <td>Jill</td>
+                          <td>Smith</td>
+                          <td>50</td>
+                        </tr>
+                        <tr>
+                          <td>Eve</td>
+                          <td>Jackson</td>
+                          <td>94</td>
+                        </tr>
+                      </table> 
+                </div>
+            </div>
+            <!-- Вертикальные заголовки таблиц -->
+            <div>
+                <h3>Вертикальные заголовки таблиц</h3>
+                <p>тобы использовать первый столбец в качестве заголовков таблицы, определите первую ячейку в каждой строке как <b>th</b> элемент:</p>
+                <div class="example">
+                    <table style="width:100%">
+                        <tr>
+                          <th>Firstname</th>
+                          <td>Jill</td>
+                          <td>Eve</td>
+                        </tr>
+                        <tr>
+                          <th>Lastname</th>
+                          <td>Smith</td>
+                          <td>Jackson</td>
+                        </tr>
+                        <tr>
+                          <th>Age</th>
+                          <td>94</td>
+                          <td>50</td>
+                        </tr>
+                      </table> 
+                </div>
+            </div>
+            <!-- Выравнивание заголовков таблицы -->
+            <div>
+                <h3>Выравнивание заголовков таблицы</h3>
+                <p>По умолчанию заголовки таблиц выделены жирным шрифтом и расположены по центру:</p>
+                <p>Чтобы выровнять заголовки таблиц по левому краю, используйте <b>text-align</b> свойство CSS:</p>
+                <div class="example">
+                    <p>th {</p>
+                        <p class="margin">text-align: left;</p>
+                    <p>}</p>
+                </div>
+            </div>
+            <!-- Заголовок для нескольких столбцов -->
+            <div>
+                <h3>Заголовок для нескольких столбцов</h3>
+                <p>У вас может быть заголовок, который охватывает два или более столбца.</p>
+                <p>Для этого используйте <b>colspan</b> атрибут <b>&lt;th&gt;</b> элемента:</p>
+                <div class="example">
+                    <table style="width:100%">
+                        <tr>
+                          <th colspan="2">Name</th>
+                          <th>Age</th>
+                        </tr>
+                        <tr>
+                          <td>Jill</td>
+                          <td>Smith</td>
+                          <td>50</td>
+                        </tr>
+                        <tr>
+                          <td>Eve</td>
+                          <td>Jackson</td>
+                          <td>94</td>
+                        </tr>
+                      </table>
+                </div>
+            </div>
+            <!-- Заголовок таблицы -->
+            <div>
+                <h3>Заголовок таблицы</h3>
+                <p>Вы можете добавить заголовок, который будет служить заголовком для всей таблицы.</p>
+                <p>Чтобы добавить подпись к таблице, используйте <b>&lt;caption&gt;</b> тег:</p>
+                <div class="example">
+                    <table style="width:100%">
+                        <caption>Monthly savings</caption>
+                        <tr>
+                          <th>Month</th>
+                          <th>Savings</th>
+                        </tr>
+                        <tr>
+                          <td>January</td>
+                          <td>$100</td>
+                        </tr>
+                        <tr>
+                          <td>February</td>
+                          <td>$50</td>
+                        </tr>
+                      </table>
+                </div>
+                <p class="notes"><b>Примечание.</b> Тег <b>&lt;caption&gt;</b>  должен быть вставлен сразу после <b>&lt;table&gt;</b> тега.</p>
+            </div>
+        </div>
+
+        <!-- Padding & Spacing HTML-таблицы -->
+        <div>
+            <div>
+                <h2 id="Table Padding & Spacing">Padding & Spacing HTML-таблицы</h2>
+                <p>Таблицы HTML могут регулировать отступы внутри ячеек, а также пространство между ячейками.</p>
+            </div>
+            <!-- HTML-таблица — Padding -->
+            <div>
+                <h3>HTML-таблица — Padding</h3>
+                <p>Padding (заполнение ячейки) — это пространство между краями ячейки и содержимым ячейки.</p>
+                <p>По умолчанию отступ установлен на 0.</p>
+                <p>Чтобы добавить отступы к ячейкам таблицы, используйте <b>padding</b> свойство CSS:</p>
+                <div class="example">
+                    <p>th, td {</p>
+                        <p class="margin">padding: 15px;</p>
+                    <p>}</p>
+                </div>
+                <p>Чтобы добавить отступ только над содержимым, используйте <b>padding-top</b> свойство.</p>
+                <p>А остальные стороны со свойствами <b>padding-bottom</b>, <b>padding-left</b> и <b>padding-right</b>:</p>
+                <div class="example">
+                    <p>th, td {</p>
+                        <p class="margin">padding-top: 10px;</p>
+                        <p class="margin">padding-bottom: 20px;</p>
+                        <p class="margin">padding-left: 30px;</p>
+                        <p class="margin">padding-right: 40px;</p>
+                    <p>}</p>
+                </div>
+            </div>
+            <!-- HTML-таблица — Spacing -->
+            <div>
+                <h3>HTML-таблица — Spacing</h3>
+                <p>Spacing (Расстояние между ячейками) — это расстояние между каждой ячейкой.</p>
+                <p>По умолчанию пространство установлено на 2 пикселя.</p>
+                <p>Чтобы изменить расстояние между ячейками таблицы, используйте <b>border-spacing</b> свойство CSS <b>table</b> элемента:</p>
+                <div class="example">
+                    <p>table {</p>
+                    <p>border-spacing: 30px;</p>
+                    <p>}</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Таблица HTML Colspan и Rowspan -->
+        <div>
+            <div>
+                <h2 id="Table Colspan & Rowspan">Таблица HTML Colspan и Rowspan</h2>
+                <p>Таблицы HTML могут иметь ячейки, которые охватывают несколько строк и/или столбцов.</p>
+            </div>
+            <!-- HTML-таблица — Colspan -->
+            <div>
+                <h3>HTML-таблица — Colspan</h3>
+                <p>Чтобы сделать ячейку, охватывающую несколько столбцов, используйте <b>colspan</b> атрибут:</p>
+                <div class="example">
+                    <table style="width:100%">
+                        <tr>
+                          <th colspan="2">Name</th>
+                          <th>Age</th>
+                        </tr>
+                        <tr>
+                          <td>Jill</td>
+                          <td>Smith</td>
+                          <td>43</td>
+                        </tr>
+                        <tr>
+                          <td>Eve</td>
+                          <td>Jackson</td>
+                          <td>57</td>
+                        </tr>
+                      </table>
+                </div>
+                <p class="notes"><b>Примечание.</b> Значение <b>colspan</b> атрибута представляет собой количество столбцов, которые нужно охватить.</p>
+            </div>
+            <!-- HTML-таблица — диапазон строк -->
+            <div>
+                <h3>HTML-таблица — диапазон строк</h3>
+                <p>Чтобы сделать ячейку, охватывающую несколько строк, используйте <b>rowspan</b> атрибут:</p>
+                <div class="example">
+                    <table style="width:100%">
+                        <tr>
+                        <th>Name</th>
+                        <td>Jill</td>
+                        </tr>
+                        <tr>
+                        <th rowspan="2">Phone</th>
+                        <td>555-1234</td>
+                        </tr>
+                        <tr>
+                        <td>555-8745</td>
+                        </tr>
+                  </table>
+                </div>
+                <p class="notes"><b>Примечание.</b> Значение <b>rowspan</b> атрибута представляет собой количество строк, которые нужно охватить.</p>
+            </div>
+        </div>
+
+        <!-- Стили HTML-таблиц -->
+        <div>
+            <div>
+                <h2 id="Table Styling">Стили HTML-таблиц</h2>
+                <p>Используйте CSS, чтобы ваши таблицы выглядели лучше.</p>
+            </div>
+            <!-- HTML-таблица — полосы зебры -->
+            <div>
+                <h3>HTML-таблица — полосы зебры</h3>
+                <p>Если вы добавите цвет фона в каждую вторую строку таблицы, вы получите приятный эффект полос зебры.</p>
+                <p>Чтобы стилизовать любой другой элемент строки таблицы, используйте <b>:nth-child(even)</b> селектор следующим образом:</p>
+                <div class="example">
+                    <p>tr:nth-child(even) {</p>
+                        <p class="margin">background-color: #D6EEEE;</p>
+                    <p>}</p>
+                </div>
+                <p class="notes"><b>Примечание.</b> Если вы используете <b>(odd)</b> вместо <b>(even)</b>, стиль будет применен к строкам 1, 3, 5 и т. д., а не к 2, 4, 6 и т. д.</p>
+            </div>
+            <!-- HTML-таблица — вертикальные полосы зебры -->
+            <div>
+                <h3>HTML-таблица — вертикальные полосы зебры</h3>
+                <p>Чтобы сделать вертикальные полоски зебры, стилизуйте каждый второй столбец, а не каждую вторую строку.</p>
+                <p>Установите <b>:nth-child(even)</b> для элементов данных таблицы следующим образом:</p>
+                <div class="example">
+                    <p>td:nth-child(even), th:nth-child(even) {</p>
+                        <p class="margin">background-color: #D6EEEE;</p>
+                    <p>}</p>
+                </div>
+                <p class="notes"><b>Примечание.</b>Поместите <b>:nth-child()</b> селектор на оба элемента <b>th</b> и <b>td</b> , если вы хотите, чтобы стиль применялся как к заголовкам, так и к обычным ячейкам таблицы.</p>
+            </div>
+            <!-- Комбинируйте вертикальные и горизонтальные полосы зебры -->
+            <div>
+                <h3>Комбинируйте вертикальные и горизонтальные полосы зебры</h3>
+                <p>Вы можете комбинировать стиль из двух приведенных выше примеров, и у вас будут полосы в каждой второй строке и каждом втором столбце.</p>
+                <p>Если вы используете прозрачный цвет, вы получите эффект перекрытия.</p>
+                <p>Используйте <b>rgba( )</b> цвет, чтобы указать прозрачность цвета:</p>
+                <div class="example">
+                    <p>tr:nth-child(even) {</p>
+                        <p class="margin">background-color: rgba(150, 212, 212, 0.4);</p>
+                    <p>}</p>
+                    <br>
+                    <p>th:nth-child(even),td:nth-child(even) {</p>
+                        <p class="margin">background-color: rgba(150, 212, 212, 0.4);</p>
+                    <p>}</p>
+                </div>
+            </div>
+            <!-- Горизонтальные разделители -->
+            <div>
+                <h3>Горизонтальные разделители</h3>
+                <p>Если вы укажете границы только внизу каждой строки таблицы, у вас будет таблица с горизонтальными разделителями.</p>
+                <p>Добавьте <b>border-bottom</b> свойство ко всем <b>tr</b> элементам, чтобы получить горизонтальные разделители:</p>
+                <div class="example">
+                    <p>tr {</p>
+                    <p>border-bottom: 1px solid #ddd;</p>
+                    <p>}</p>
+                </div>
+             </div>
+             <!-- Парящий стол -->
+             <div>
+                <h3>Парящий стол</h3>
+                <p>Используйте <b>:hover</b> селектор <b>tr</b>, чтобы выделить строки таблицы при наведении указателя мыши:</p>
+                <div class="example">
+                    <p>tr:hover {background-color: #D6EEEE;}</p>
+                </div>
+             </div>
         </div>
 
     <script>
