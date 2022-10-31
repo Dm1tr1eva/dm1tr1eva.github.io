@@ -7,7 +7,11 @@ html {
 }
 
 h1{
+    font-size: 50px;
     text-align:center;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 0%;
+    margin-right: 0%;
 }
 
 h2{
@@ -27,6 +31,10 @@ h3{
     background-color:rgba(60, 79, 64, 0.522);
     border: 2px solid rgb(15, 39, 21);
     padding: 15px;
+}
+
+body{
+    background-color: rgb(92, 154, 104);
 }
 
 body{
@@ -69,10 +77,14 @@ a:link, a:visited {
     text-align: center;
     text-decoration: none;
     /* display:contents; */
+    transition: 0.4s;
 }
   
 a:hover, a:active {
-    background-color: rgb(15, 39, 21);
+    transition: 0.2s;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgba(15, 39, 21, 0.763);
 }
 
 table, th, td {

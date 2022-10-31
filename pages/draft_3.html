@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <title>HTML Introduction</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <link rel="icon" href="img/Green-Leaves.png">
 </head>
 
@@ -29,6 +29,7 @@
                         <li><a href="#Table Padding & Spacing">Padding & Spacing HTML-таблицы</a></li>
                         <li><a href="#Table Colspan & Rowspan">Таблица HTML Colspan и Rowspan</a></li>
                         <li><a href="#Table Styling">Стили HTML-таблиц</a></li>
+                        <li><a href="#Table Colgroup">HTML-таблица Colgroup</a></li>
                     </ul>
             </ol>
         </div>
@@ -752,6 +753,269 @@
                 </div>
              </div>
         </div>
+
+        <!-- HTML-таблица Colgroup -->
+        <div>
+            <div>
+                <h2 id="Table Colgroup">HTML-таблица Colgroup</h2>
+                <p>Элемент <b>&lt;colgroup&gt;</b> используется для стилизации определенных столбцов таблицы.</p>
+            </div>
+            <!-- HTML-таблица Colgroup -->
+            <div>
+                <h3>HTML-таблица Colgroup</h3>
+                <p>Если вы хотите стилизовать два первых столбца таблицы, используйте элементы <b>&lt;colgroup&gt;</b> и <b>&lt;col&gt;</b>.</p>
+                <p>Элемент <b>&lt;colgroup&gt;</b> следует использовать в качестве контейнера для спецификаций столбца.</p>
+                <p>Каждая группа определяется <b>&lt;col&gt;</b> элементом.</p>
+                <p>Атрибут <b>span</b> указывает, сколько столбцов получает стиль.</p>
+                <p>Атрибут <b>style</b> определяет стиль для столбцов.</p>
+                <p class="notes"><b>Примечание.</b> Существует очень ограниченный выбор допустимых свойств CSS для colgroups .</p>
+                <div class="example">
+                    <table style="width: 100%;">
+                        <colgroup>
+                          <col span="2" style="background-color: #D6EEEE">
+                        </colgroup>
+                        <tr>
+                            <th>MON</th>
+                            <th>TUE</th>
+                            <th>WED</th>
+                            <th>THU</th>
+                            <th>FRI</th>
+                            <th>SAT</th>
+                            <th>SUN</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                            <td>21</td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                        </tr>
+                    </table>
+                </div>
+                <p class="notes"><b>Примечание.</b> Тег <b>&lt;colgroup&gt;</b> должен быть дочерним элементом элемента <b>&lt;table&gt;</b> и должен располагаться перед любыми другими элементами таблицы, такими как <b>&lt;thead&gt;</b>, <b>&lt;tr&gt;</b>, <b>&lt;td&gt;</b> и т. д., но после <b>&lt;caption&gt;</b> элемента, если он присутствует.</p>
+            </div>
+            <!-- Допустимые свойства CSS -->
+            <div>
+                <h3>Допустимые свойства CSS</h3>
+                <p>Существует лишь очень ограниченный набор свойств CSS, которые разрешено использовать в <b>colgroup</b>:</p>
+                <p><b>width</b> свойства</p>
+                <p><b>visibility</b> свойства</p>
+                <p><b>background</b> свойства</p>
+                <p><b>border</b> свойства</p>
+                <p>Все остальные свойства CSS не будут влиять на ваши таблицы.</p>
+            </div>
+            <!-- Несколько элементов Col -->
+            <div>
+                <h3>Несколько элементов Col</h3>
+                <p>Если вы хотите стилизовать больше столбцов с разными стилями, используйте больше <b>&lt;col&gt;</b> элементов внутри <b>&lt;colgroup&gt;</b>:</p>
+                <div class="example">
+                    <table style="width: 100%;">
+                        <colgroup>
+                          <col span="2" style="background-color: #D6EEEE">
+                          <col span="3" style="background-color: pink">
+                        </colgroup>
+                      <tr>
+                        <th>MON</th>
+                        <th>TUE</th>
+                        <th>WED</th>
+                        <th>THU</th>
+                        <th>FRI</th>
+                        <th>SAT</th>
+                        <th>SUN</th>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                      </tr>
+                      <tr>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                      </tr>
+                      <tr>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                      </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- Пустые группы -->
+            <div>
+                <h3>Пустые группы</h3>
+                <p>Если вы хотите стилизовать столбцы в середине таблицы, вставьте «пустой» <b>&lt;col&gt;</b> элемент (без стилей) для столбцов:</p>
+                <div class="example">
+                    <table style="width: 100%;">
+                        <colgroup>
+                          <col span="3">
+                          <col span="2" style="background-color: pink">
+                        </colgroup>
+                        <tr>
+                            <th>MON</th>
+                            <th>TUE</th>
+                            <th>WED</th>
+                            <th>THU</th>
+                            <th>FRI</th>
+                            <th>SAT</th>
+                            <th>SUN</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                            <td>21</td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- Скрыть столбцы -->
+            <div>
+                <h3>Скрыть столбцы</h3>
+                <p>Вы можете скрыть столбцы с помощью <b>visibility: collapse</b> свойства:</p>
+                <div class="example">
+                    <table style="width: 100%;">
+                        <colgroup>
+                            <col span="2">
+                            <col span="3" style="visibility: collapse">
+                          </colgroup>
+                        <tr>
+                            <th>MON</th>
+                            <th>TUE</th>
+                            <th>WED</th>
+                            <th>THU</th>
+                            <th>FRI</th>
+                            <th>SAT</th>
+                            <th>SUN</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                            <td>21</td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
 
     <script>
         window.addEventListener('scroll', function(){
