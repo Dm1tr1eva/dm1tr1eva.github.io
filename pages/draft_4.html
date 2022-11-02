@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>HTML. Раздел 2.</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" href="/img/Green-Leaves.png">
+    <style>
+        table {
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        th, td {
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: RGBA(255, 255, 255, 0.4);;
+        }
+        </style>
+</head>
+
+<body>
+
+    <div class="upward" onclick="scrollTopTop()"></div>
+    
+    <div>
+        <h1>HTML. Раздел 4.</h1>
+    </div>
+
+    <div>
+        <h2>Содержание:</h2>
+    </div>
+
+    <div>
+        <ol>
+            <li><a href="#Lists">HTML-списки</a></li>
+                <ul>
+                    <li><a href="#Unordered Lists">Ненумерованные списки HTML</a></li>
+                </ul>
+        </ol>
+    </div>
+
+    <!-- HTML-списки -->
+    <div>
+        <div>
+            <h2 id="Lists">HTML-списки</h2>
+            <p>Списки HTML позволяют веб-разработчикам группировать набор связанных элементов в списки.</p>
+            <h4>Неупорядоченный список HTML</h4>
+            <ul>
+                <li>Кофе</li>
+                <li>Чай</li>
+                <li>Молоко</li>
+            </ul>
+            <h4>Упорядоченный список HTML</h4>
+            <ol>
+                <li>Кофе</li>
+                <li>Чай</li>
+                <li>Молоко</li>
+            </ol>
+        </div>
+        <!-- Неупорядоченный список HTML -->
+        <div>
+            <h3>Неупорядоченный список HTML</h3>
+            <p>Ненумерованный список начинается с <b>&lt;ul&gt;</b> тега. Каждый элемент списка начинается с <b>&lt;li&gt;</b> тега.</p>
+            <p>Элементы списка будут отмечены маркерами (маленькими черными кружками) по умолчанию:</p>
+            <div class="example">
+                <ul>
+                    <li>Кофе</li>
+                    <li>Чай</li>
+                    <li>Молоко</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Упорядоченный список HTML -->
+        <div>
+            <h3>Упорядоченный список HTML</h3>
+            <p>Упорядоченный список начинается с <b>&lt;ol&gt;</b> тега. Каждый элемент списка начинается с <b>&lt;li&gt;</b> тега.</p>
+            <p>По умолчанию элементы списка будут отмечены цифрами:</p>
+            <div class="example">
+                <ol>
+                    <li>Кофе</li>
+                    <li>Чай</li>
+                    <li>Молоко</li>
+                </ol>
+            </div>
+        </div>
+        <!-- Списки HTML-описаний -->
+        <div>
+            <h3>Списки HTML-описаний</h3>
+            <p>HTML также поддерживает списки описаний.</p>
+            <p>Список описаний — это список терминов с описанием каждого термина</p>
+            <p>Тег <b>&lt;dl&gt;</b> определяет список описания, <b>&lt;dt&gt;</b> тег определяет термин (имя), а <b>&lt;dd&gt;</b> тег описывает каждый термин:</p>
+            <div class="example">
+                <dl>
+                    <dt>Кофе</dt>
+                    <dd>- черный горячий напиток</dd>
+                    <dt>Молоко</dt>
+                    <dd>- белый холодный напиток</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ненумерованные списки HTML -->
+    <div>
+        <div>
+            <h2>Ненумерованные списки HTML</h2>
+            <p>Тег HTML <b>&lt;ul&gt;</b> определяет неупорядоченный (маркированный) список.</p>
+        </div>
+        <!-- Неупорядоченный список HTML -->
+        <div>
+            <h3>Неупорядоченный список HTML</h3>
+            <p>Ненумерованный список начинается с <b>&lt;ul&gt;</b> тега. Каждый элемент списка начинается с <b>&lt;li&gt;</b> тега.</p>
+            <p>Элементы списка будут отмечены маркерами (маленькими черными кружками) по умолчанию:</p>
+            <div class="example">
+                <ul>
+                    <li>Кофе</li>
+                    <li>Чай</li>
+                    <li>Молоко</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Неупорядоченный список HTML — выберите маркер элемента списка -->
+        <div>
+            <h3>Неупорядоченный список HTML — выберите маркер элемента списка</h3>
+            <p>Свойство CSS <b>list-style-type</b> используется для определения стиля маркера элемента списка. Он может иметь одно из следующих значений:</p>
+            <table>
+                <tr>
+                    <th>Значение</th>
+                    <th>Описание</th>
+                </tr>
+                <tr>
+                    <td>disc</td>
+                    <td>Устанавливает маркер элемента списка в маркер (по умолчанию)</td>
+                </tr>
+                <tr>
+                    <td>circle</td> 
+                    <td>Устанавливает маркер элемента списка в круг</td> 
+                </tr>
+                <tr>
+                    <td>square</td>
+                    <td>Устанавливает маркер элемента списка в квадрат</td>
+                </tr>
+                <tr>
+                    <td>none</td>
+                    <td>Элементы списка не будут отмечены</td>
+                </tr>
+            </table>
+            <br>
+            <div class="example">
+                <h4>Пример — диск</h4>
+                <ul style="list-style-type:disc;">
+                    <li>Кофе</li>
+                    <li>Чай</li>
+                    <li>Молоко</li>
+                </ul>
+            </div>
+            <br>
+            <div class="example">
+                <h4>Пример — круг</h4>
+                <ul style="list-style-type:circle;">
+                    <li>Кофе</li>
+                    <li>Чай</li>
+                    <li>Молоко</li>
+                </ul>
+            </div>
+            <br>
+            <div class="example">
+                <h4>Пример — квадрат</h4>
+                <ul style="list-style-type:square;">
+                    <li>Кофе</li>
+                    <li>Чай</li>
+                    <li>Молоко</li>
+                </ul>
+            </div>
+            <br>
+            <div class="example">
+                <h4>Пример — нет</h4>
+                <ul style="list-style-type:none;">
+                    <li>Кофе</li>
+                    <li>Чай</li>
+                    <li>Молоко</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Вложенные списки HTML -->
+        <div>
+            <h3>Вложенные списки HTML</h3>
+            <p>Списки могут быть вложенными (список внутри списка):</p>
+            <div class="example">
+                <ul>
+                    <li>Кофе</li>
+                    <li>Чай
+                      <ul>
+                        <li>Черный чай</li>
+                        <li>Зеленый чай</li>
+                      </ul>
+                    </li>
+                    <li>Молоко</li>
+                  </ul>
+            </div>
+            <p class="notes"><b>Примечание.</b> Элемент списка ( <b>&lt;li&gt;</b> ) может содержать новый список и другие элементы HTML, например изображения, ссылки и т. д.</p>
+        </div>
+        <!-- Горизонтальный список с помощью CSS -->
+        <div>
+            <h3>Горизонтальный список с помощью CSS</h3>
+            <p>Списки HTML могут быть оформлены различными способами с помощью CSS.</p>
+            <p>Одним из популярных способов является горизонтальное оформление списка для создания навигационного меню:</p>
+            <div class="example">
+                <p>&lt;style&gt;</p>
+                <p>ul {</p>
+                    <p class="margin">list-style-type: none;</p>
+                    <p class="margin">margin: 0;</p>
+                    <p class="margin">padding: 0;</p>
+                    <p class="margin">overflow: hidden;</p>
+                    <p class="margin">background-color: #333333;</p>
+                <p>}</p>
+                <br>
+                <p>li {</p>
+                    <p class="margin">float: left;</p>
+                <p>}</p>
+                <br>
+                <p>li a {</p>
+                    <p class="margin">display: block;</p>
+                    <p class="margin">color: white;</p>
+                    <p class="margin">text-align: center;</p>
+                    <p class="margin">padding: 16px;</p>
+                    <p class="margin">text-decoration: none;</p>
+                <p>}</p>
+                <br>
+                <p>li a:hover {</p>
+                    <p class="margin">background-color: #111111;</p>
+                <p>}</p>
+                <p>&lt;/style&gt;</p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <script>
+        window.addEventListener('scroll', function(){
+            let scroll = document.querySelector('.upward');
+            scroll.classList.toggle('active', window.scrollY>500);
+        })
+    
+        function scrollTopTop(){
+            window.scrollTo({
+                top:0, 
+                behavior: 'smooth'
+            })
+        }
+    </script>
+    
+</body>
+</html>
