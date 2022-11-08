@@ -102,3 +102,28 @@ table, th, td {
 .t2 th, .t2 td {
     border-style: dotted;
 }
+
+/* .textcols {
+	column-width: 40%;
+	column-count: 5;
+	column-gap: 4%;
+	background: #fff2e1;
+} */
+
+.textcols {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.textcols-item {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 1;
+	height: 48%;
+	/* background: #fff2e1; */
+}
+.textcols-item + .textcols-item {
+	margin-left: 4%;
+}
